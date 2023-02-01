@@ -1,0 +1,1186 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <meta name="keywords" content="The new and improved Wikipedia">
+    <meta name="WikiV2">
+
+    <head prefix="og: https://ogp.me/ns#">
+        <!-- ... other tags like title, link, charset, viewport -->
+        <meta property="og:title" content="WikiV2 - Created by Nesty" />
+        <meta property="og:description" content="Bringing your brands & ideas to life" />
+        <meta property="og:image"
+            content="https://usersnap.com/blog/wp-content/uploads/2015/03/web-development-what-noone-talks-about.jpg" />
+        <meta name="twitter:site" content="@username-example" />
+        <meta name="twitter:card" content="summary || summary_large_image || player || app" />
+        <meta name="twitter:creator" content="@username-example" />
+
+
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>wikipediaV2</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+        <link href="./CSS/core.css" rel="stylesheet">
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+
+        <link rel="icon" type="image/x-icon" href="./Assets/Logo__Thumb.png">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    </head>
+
+
+
+<body id="backtotop">
+    <div class="surface mobile__sticky">
+        <div class="  container">
+            <header class="blog-header py-3">
+                <div class="row flex-nowrap justify-content-between align-items-center">
+                    <div class="col-lg-5 d-none  d-lg-flex justify-content-evenly header__nav pe-5">
+                        <a href="" class="d-none d-lg-block mt-auto mb-auto" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasExample" aria-controls="offcanvasExample"> <i
+                                class="bi bi-person-circle fs-5"></i> User 1</a>
+
+                        <input type="checkbox" id="toggle"
+                            class="toggle--checkbox d-none darkmodeStuff session__storage__checkbox">
+                        <label for="toggle" class="toggle--label darkmodeStuff" id="dark-mode-toggle">
+                            <span class="toggle--label-background"></span>
+                        </label>
+                    </div>
+                    <div class="col-lg-2 col-6 text-center">
+                        <a class="blog-header-logo text-reset" href="index.html">
+                            <svg version="1.0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 464.000000 147.000000"
+                                preserveAspectRatio="xMidYMid meet">
+
+                                <g transform="translate(0.000000,147.000000) scale(0.100000,-0.100000)"
+                                    fill="currentColor" stroke="none">
+                                    <path d="M4272 1383 c-6 -10 -60 -143 -121 -296 -61 -153 -117 -286 -123 -297
+-7 -11 -30 -26 -50 -35 -65 -26 -45 -35 72 -35 91 0 110 3 110 15 0 8 -8 15
+-18 15 -10 0 -27 6 -38 14 -19 14 -18 16 10 98 16 46 33 89 39 96 6 8 44 12
+121 12 l112 0 32 -97 c30 -91 31 -99 15 -110 -9 -7 -27 -13 -40 -13 -14 0 -23
+-6 -23 -15 0 -13 18 -15 123 -13 120 3 152 14 87 31 -17 4 -36 16 -42 27 -7
+10 -60 153 -118 317 -106 301 -123 333 -148 286z m88 -360 c0 -10 -23 -13 -88
+-13 -49 0 -91 3 -95 6 -5 6 8 45 74 219 l22 60 44 -130 c23 -71 43 -135 43
+-142z" />
+                                    <path d="M20 1376 c0 -8 11 -17 25 -20 13 -3 30 -16 37 -29 6 -12 65 -155 129
+-317 90 -227 121 -295 134 -295 12 0 39 45 94 158 l76 159 69 -162 c52 -119
+73 -160 85 -158 10 2 64 115 151 312 124 285 138 310 168 324 60 29 41 42 -63
+42 -71 0 -95 -3 -95 -13 0 -7 14 -18 30 -24 21 -8 30 -18 30 -33 0 -25 -189
+-470 -200 -470 -4 0 -34 60 -67 133 l-61 132 57 110 c41 80 63 114 84 123 15
+7 27 20 27 28 0 11 -16 14 -75 14 -57 0 -75 -3 -75 -14 0 -8 7 -16 15 -20 24
+-9 18 -41 -21 -118 l-36 -72 -25 48 c-14 27 -31 67 -39 88 -12 35 -12 39 6 51
+43 26 23 37 -70 37 -69 0 -90 -3 -90 -13 0 -8 11 -19 23 -24 17 -8 40 -47 80
+-137 32 -69 57 -131 57 -137 0 -6 -23 -63 -52 -126 -38 -84 -54 -110 -60 -99
+-22 39 -188 452 -188 468 0 10 14 25 30 33 17 9 28 20 25 25 -4 6 -53 10 -111
+10 -82 0 -104 -3 -104 -14z" />
+                                    <path d="M1002 1183 c2 -10 12 -19 23 -21 41 -7 45 -28 45 -208 0 -184 -5
+-204 -51 -204 -10 0 -19 -7 -19 -15 0 -12 19 -15 110 -15 91 0 110 3 110 15 0
+8 -9 15 -19 15 -46 0 -51 20 -51 209 0 186 2 195 45 203 11 2 21 11 23 21 3
+15 -8 17 -108 17 -100 0 -111 -2 -108 -17z" />
+                                    <path d="M1312 1183 c2 -10 12 -19 23 -21 43 -8 45 -17 45 -203 0 -189 -5
+-209 -51 -209 -10 0 -19 -7 -19 -15 0 -12 18 -15 105 -15 87 0 105 3 105 15 0
+8 -6 15 -14 15 -34 0 -46 30 -46 111 0 77 1 80 22 77 27 -4 158 -170 158 -199
+0 -17 8 -19 70 -19 55 0 70 3 70 15 0 8 -11 17 -25 21 -16 4 -56 45 -110 113
+-47 58 -85 108 -85 111 0 11 118 153 136 163 10 6 32 13 49 17 17 3 31 13 33
+23 3 16 -5 17 -89 15 -65 -2 -94 -7 -97 -16 -2 -7 5 -16 17 -19 12 -3 21 -10
+21 -15 0 -17 -58 -94 -99 -131 -64 -58 -72 -52 -69 45 3 79 4 83 31 96 15 7
+27 20 27 28 0 11 -20 14 -106 14 -95 0 -105 -2 -102 -17z" />
+                                    <path d="M1852 1183 c2 -10 13 -19 25 -21 41 -6 44 -21 41 -213 l-3 -184 -32
+-10 c-18 -5 -33 -15 -33 -22 0 -10 28 -13 116 -13 88 0 115 3 112 13 -3 6 -14
+13 -26 15 -45 7 -52 35 -52 204 0 178 6 205 47 210 17 2 28 9 28 18 0 12 -21
+16 -113 18 -104 2 -113 1 -110 -15z" />
+                                    <path d="M2165 1190 c-10 -16 4 -30 31 -30 37 0 44 -33 44 -208 0 -169 -7
+-197 -52 -204 -12 -2 -23 -9 -26 -15 -3 -10 24 -13 112 -13 88 0 116 3 116 13
+0 7 -15 17 -32 22 l-33 10 -3 75 -3 75 63 0 c76 0 121 26 149 89 23 50 24 76
+4 122 -24 58 -74 74 -232 74 -77 0 -134 -4 -138 -10z m251 -34 c12 -4 26 -18
+32 -32 15 -32 15 -106 1 -138 -14 -30 -59 -48 -99 -39 l-30 6 0 99 c0 93 1 99
+23 108 21 8 30 8 73 -4z" />
+                                    <path d="M2622 1183 c2 -10 13 -19 25 -21 41 -6 44 -21 41 -213 l-3 -184 -32
+-10 c-18 -5 -33 -15 -33 -22 0 -10 40 -13 184 -13 l184 0 12 53 c6 28 13 60
+15 70 7 34 -24 16 -44 -26 -25 -52 -53 -67 -126 -67 -68 0 -75 11 -75 120 l0
+81 57 -3 c51 -3 58 -6 63 -27 3 -14 11 -26 18 -29 9 -3 12 18 12 78 0 60 -3
+81 -12 78 -7 -3 -15 -15 -18 -29 -5 -21 -12 -24 -63 -27 l-58 -3 3 83 3 83 68
+3 c77 3 92 -4 114 -55 26 -64 41 -30 27 60 l-7 37 -179 0 c-166 0 -179 -1
+-176 -17z" />
+                                    <path d="M3102 1183 c2 -10 12 -19 23 -21 43 -8 45 -17 45 -203 0 -189 -5
+-209 -51 -209 -10 0 -19 -7 -19 -15 0 -22 304 -22 358 0 85 36 121 101 122
+216 0 102 -33 171 -104 214 -49 30 -51 30 -214 33 -154 4 -164 3 -160 -15z
+m310 -39 c62 -32 95 -124 85 -242 -8 -102 -61 -152 -163 -152 -86 0 -85 -3
+-82 215 l3 189 25 7 c32 9 97 0 132 -17z" />
+                                    <path d="M3662 1183 c2 -10 13 -19 25 -21 41 -6 44 -21 41 -213 l-3 -184 -32
+-10 c-18 -5 -33 -15 -33 -22 0 -10 28 -13 116 -13 88 0 115 3 112 13 -3 6 -14
+13 -26 15 -45 7 -52 35 -52 210 0 168 7 202 39 202 21 0 44 23 34 33 -3 4 -55
+7 -115 7 -99 0 -109 -2 -106 -17z" />
+                                    <path d="M361 492 c-25 -10 -69 -13 -158 -10 -110 3 -123 1 -123 -14 0 -9 -3
+-23 -6 -32 -3 -9 -1 -16 4 -16 6 0 14 9 17 20 5 16 15 20 50 20 53 0 55 -4 55
+-125 0 -125 -6 -152 -39 -164 -20 -7 -9 -9 54 -9 65 0 75 1 53 10 l-28 10 0
+139 0 140 58 -3 57 -3 3 -130 c3 -123 2 -131 -19 -147 -21 -18 -20 -18 37 -18
+52 1 57 2 41 14 -15 12 -17 26 -15 82 3 63 5 70 30 84 46 25 62 6 66 -75 2
+-52 -1 -72 -14 -86 -17 -18 -15 -19 37 -19 47 1 52 2 37 14 -14 10 -18 28 -18
+79 0 36 -4 77 -10 91 -13 36 -52 43 -95 18 l-34 -21 -3 83 -3 83 -34 -15z" />
+                                    <path d="M3155 503 c-45 -10 -51 -15 -27 -24 21 -8 22 -12 22 -147 0 -133 -1
+-140 -22 -155 -22 -15 -20 -16 42 -16 54 0 61 2 43 11 -22 11 -23 15 -23 175
+0 89 -3 162 -7 162 -5 -1 -17 -3 -28 -6z" />
+                                    <path d="M4128 503 c-31 -5 -37 -18 -13 -27 10 -4 15 -20 15 -53 l0 -48 -46 0
+c-39 0 -50 -5 -75 -33 -24 -27 -29 -41 -29 -83 0 -43 5 -55 29 -80 33 -33 56
+-36 89 -13 20 14 25 14 35 2 10 -12 18 -12 46 -3 34 12 34 13 13 24 -21 11
+-22 17 -22 166 0 85 -3 154 -7 154 -5 -1 -20 -4 -35 -6z m-10 -155 c7 -7 12
+-39 12 -73 0 -69 -20 -99 -61 -93 -45 6 -67 108 -33 156 17 24 62 30 82 10z" />
+                                    <path d="M925 468 c33 -18 35 -28 35 -148 0 -120 -2 -130 -35 -148 -16 -9 -7
+-11 50 -12 66 0 68 1 47 16 -19 13 -22 24 -22 80 l0 64 40 0 c27 0 43 -5 46
+-15 11 -28 24 -15 24 25 0 40 -13 53 -24 25 -3 -10 -19 -15 -46 -15 l-40 0 0
+61 0 60 53 -3 c43 -2 54 -7 62 -25 12 -28 25 -30 25 -4 0 49 -6 51 -124 51
+-88 -1 -107 -3 -91 -12z" />
+                                    <path d="M1908 468 c21 -11 22 -16 22 -144 0 -126 -1 -134 -22 -148 -21 -15
+-14 -16 99 -16 l121 0 6 31 c12 60 1 67 -26 18 -17 -29 -20 -30 -75 -27 l-58
+3 -3 68 -3 67 39 0 c30 0 44 -6 55 -22 15 -22 16 -21 16 32 0 53 -1 54 -16 33
+-11 -17 -25 -23 -55 -23 l-39 0 3 58 3 57 47 3 c41 3 49 0 64 -22 22 -35 31
+-32 26 9 l-4 35 -112 -1 c-87 0 -106 -3 -88 -11z" />
+                                    <path d="M4264 469 c-8 -14 21 -43 35 -35 19 12 13 46 -8 46 -11 0 -23 -5 -27
+-11z" />
+                                    <path d="M664 371 c-63 -27 -87 -133 -41 -186 31 -36 82 -42 126 -15 35 22 37
+39 3 21 -51 -27 -112 9 -112 65 0 23 3 24 70 24 67 0 70 1 70 24 0 51 -65 88
+-116 67z m66 -31 c16 -30 4 -40 -46 -40 -48 0 -52 5 -28 38 19 28 60 29 74 2z" />
+                                    <path d="M1188 373 c-29 -4 -39 -23 -13 -23 33 0 33 -150 -1 -175 -17 -13 -12
+-14 46 -14 53 0 61 2 43 11 -40 19 -43 118 -5 160 11 13 18 15 28 7 16 -13 34
+-4 34 17 0 25 -30 28 -60 6 -27 -20 -28 -20 -23 -2 5 21 4 21 -49 13z" />
+                                    <path d="M1411 367 c-87 -44 -85 -181 3 -210 34 -11 67 -3 97 24 21 18 21 20
+4 13 -54 -19 -82 -16 -104 11 -11 15 -21 38 -21 51 0 23 3 24 70 24 73 0 76 2
+64 48 -6 22 -50 52 -76 52 -7 0 -24 -6 -37 -13z m68 -29 c12 -32 6 -38 -45
+-38 -48 0 -55 11 -27 42 23 26 62 23 72 -4z" />
+                                    <path d="M1628 364 c-53 -28 -73 -105 -43 -164 17 -32 70 -54 108 -45 27 7 68
+45 49 45 -6 0 -14 -4 -17 -10 -8 -13 -51 -13 -75 0 -16 8 -40 58 -40 81 0 5
+32 9 70 9 l70 0 0 29 c0 20 -9 36 -26 50 -31 25 -58 26 -96 5z m70 -16 c7 -7
+12 -20 12 -30 0 -15 -9 -18 -50 -18 -49 0 -50 1 -39 23 20 38 53 49 77 25z" />
+                                    <path d="M2198 373 c-29 -4 -39 -23 -13 -23 24 0 22 -158 -2 -176 -16 -12 -11
+-13 36 -14 52 0 53 1 38 18 -12 13 -17 37 -17 75 0 65 26 100 70 95 24 -3 25
+-6 28 -82 2 -66 0 -80 -15 -92 -16 -12 -11 -13 42 -14 57 0 58 1 37 16 -20 13
+-22 24 -22 93 0 63 -4 81 -18 94 -25 22 -48 21 -88 -4 l-34 -21 0 21 c0 12 -3
+20 -7 20 -5 -1 -20 -4 -35 -6z" />
+                                    <path d="M2498 365 c-76 -42 -76 -165 -1 -200 38 -18 76 -14 106 12 26 24 20
+37 -9 19 -14 -10 -37 -16 -52 -14 -55 6 -80 119 -36 163 23 23 53 18 66 -10
+13 -28 36 -33 45 -9 15 39 -70 67 -119 39z" />
+                                    <path d="M2973 370 c-53 -22 -78 -111 -48 -170 29 -56 127 -61 156 -9 12 23
+-3 25 -21 4 -7 -8 -25 -15 -41 -15 -52 0 -83 78 -55 143 19 46 60 52 78 12 13
+-28 36 -33 45 -9 13 35 -65 65 -114 44z" />
+                                    <path d="M3294 361 c-50 -30 -67 -97 -39 -151 34 -66 121 -76 169 -19 45 53
+31 146 -25 175 -38 19 -68 18 -105 -5z m91 -21 c26 -28 32 -113 11 -145 -47
+-72 -131 21 -106 116 6 21 16 40 23 42 26 11 55 6 72 -13z" />
+                                    <path d="M3508 373 c-31 -5 -37 -18 -13 -27 12 -4 15 -29 15 -139 0 -128 -1
+-135 -22 -150 -22 -15 -20 -16 40 -16 60 -1 83 11 42 22 -16 4 -20 14 -20 52
+0 46 0 47 29 40 91 -20 162 87 116 175 -27 53 -74 64 -119 29 l-26 -20 0 20
+c0 12 -3 20 -7 20 -5 -1 -20 -4 -35 -6z m148 -55 c33 -63 -2 -148 -60 -148
+-35 0 -46 20 -46 84 0 69 17 96 61 96 22 0 32 -7 45 -32z" />
+                                    <path d="M3803 360 c-69 -41 -68 -161 1 -194 42 -20 50 -20 92 0 41 20 46 37
+6 22 -54 -21 -88 1 -107 69 -6 21 -3 22 67 25 71 3 73 4 70 28 -4 31 -46 70
+-75 70 -12 0 -36 -9 -54 -20z m75 -12 c7 -7 12 -20 12 -30 0 -15 -8 -18 -45
+-18 -49 0 -59 15 -29 44 18 19 45 21 62 4z" />
+                                    <path d="M4268 373 c-31 -5 -37 -18 -13 -27 11 -4 15 -23 15 -80 0 -66 -3 -77
+-22 -90 -21 -15 -19 -16 42 -15 54 0 61 2 43 11 -22 10 -23 17 -23 110 0 54
+-3 97 -7 97 -5 -1 -20 -4 -35 -6z" />
+                                    <path d="M4430 373 c-44 -16 -67 -63 -31 -63 13 0 21 8 23 23 4 29 47 36 65
+11 24 -33 16 -51 -31 -64 -83 -23 -112 -87 -54 -119 24 -14 30 -14 61 1 31 15
+36 15 50 0 14 -13 20 -14 44 -2 26 13 27 14 7 17 -20 4 -22 11 -26 85 -3 69
+-6 82 -27 99 -23 19 -51 23 -81 12z m70 -138 c0 -44 -36 -73 -69 -55 -33 17
+-26 55 14 78 38 22 55 15 55 -23z" />
+                                    <path d="M2666 355 c21 -14 94 -169 94 -200 0 -30 -29 -74 -52 -77 -27 -4 -35
+-26 -13 -34 27 -11 52 25 110 157 30 68 64 134 76 147 l21 22 -42 0 c-37 0
+-41 -2 -30 -15 11 -13 9 -26 -11 -75 -13 -33 -27 -60 -30 -60 -4 0 -19 28 -33
+62 -26 59 -26 63 -10 75 15 11 9 13 -41 13 -55 0 -58 -1 -39 -15z" />
+                                </g>
+                            </svg>
+                        </a>
+                    </div>
+
+                    <div class="col-lg-5 col-6 d-flex justify-content-end header__nav align-items-center">
+
+
+                        <div class="input-group flex-nowrap w-75 search__box  d-flex">
+
+                            <span class="input-group-text" id="searchBtn" onclick="returnText()" id="addon-wrapping"><i
+                                    class="bi bi-search"></i></span>
+
+                            <input type="search" class="form-control " placeholder="Search" aria-label="Username"
+                                id="userInput" maxlength="50" aria-describedby="addon-wrapping">
+                        </div>
+
+
+
+
+                        <a href="" class="d-block d-lg-none fs-1 ps-3" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"> <i
+                                class="bi bi-person-circle"></i></a>
+
+                    </div>
+                </div>
+            </header>
+        </div>
+    </div>
+    <div class="banner__head  sticky-top d-none d-lg-flex ">
+        <div class="container ">
+            <div class="  mb-2 ">
+                <nav class="nav justify-content-between main__nav pt-4 pb-3 ">
+                    <li><i class="bi bi-house"></i> <a class=" active" href="index.html">Main page</a></li>
+                    <li><i class="bi bi-card-list"></i> <a class="" href="#">Contents</a></li>
+                    <li><i class="bi bi-calendar"></i> <a class="" href="#">Current events</a></li>
+                    <li><i class="bi bi-journal-richtext"></i> <a class="" href="Article.html">Random article</a></li>
+                    <li><i class="bi bi-people"></i> <a class="" href="#">About Wikipedia</a></li>
+                    <li><i class="bi bi-envelope"></i> <a class="" href="#">Contact us</a></li>
+                    <li><i class="bi bi-gift"></i> <a class="" href="#">Donate</a></li>
+
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    </div>
+    <main class="container mt-5">
+        <div class="p-4 p-md-5 mb-4 rounded  intro__box shadow ">
+            <div class="col-md-6 px-0 ">
+                <div class="p-2 frosted__glass ">
+                    <h1 class="display-4 fst-italic fs-2">Welcome to <span class="wikiFont fst-normal">Wikipedia</span>,
+                    </h1>
+
+
+
+                    <p class="lead fs-6 mb-0">
+                        <span class=" mb-0 pb-0 fs-1 fw-bold lh-1"> <span class="counting pe-0"
+                                data-count="6"></span>,<span class="counting ps-0" data-count="559"></span>,<span
+                                class="counting ps-0 mb-0" data-count="794"></span>
+                            <div class="mb-1 fs-2" id="">Articles as of <span class="mb-1 fs-2 fw-bold"
+                                    id="today__date"></span></div>
+
+                    </p>
+                </div>
+                <div class="row p-0 m-0 justify-content-between ">
+
+                    <div class="col-6  p-3 bg-dark"><span class="fw-bold fs-5 lh-1 counting"
+                            data-count="367"></span>,<span class="fw-bold fs-5 lh-1 counting" data-count="147"></span>
+                        <br> Users <i class="bi bi-globe text-success"></i></div>
+                    <div class="col-6  p-3 bg-dark text-end"><span class="fw-bold fs-5 lh-1 counting"
+                            data-count="2">1</span>,<span class="fw-bold fs-5 lh-1 counting" data-count="598"></span>
+                        <br>
+                        Editors <i class="bi bi-person-check-fill text-info "></i></div>
+
+                </div>
+
+
+            </div>
+        </div>
+
+
+
+
+        <div class="row mb-2">
+            <div class="col-md-6 ">
+                <div class="row g-0   rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static surface facts__widget">
+
+                        <h3 class="mb-0">Today's featured article</h3>
+                        <div class="mb-1 text-muted" id=""></div>
+                        <p class="card-text mb-auto widget__overflow" id="tfa__text">Daglish railway station is a
+                            commuter railway station on the
+                            boundary of Daglish and Subiaco, suburbs of Perth, Western Australia.</p>
+                        <a href="#" id="tfa__link" class="stretched-link">Continue reading</a>
+                    </div>
+
+                    <div class="col-12 col-lg-auto featuredA__placeholder__img border__style  lightboxIndex"
+                        id="featuredAImage">
+                        <a data-modal="bs-lightbox" id="fta__image__full" class="lightboxIndex "
+                            href="https://upload.wikimedia.org/wikipedia/en/thumb/8/80/Wikipedia-logo-v2.svg/1200px-Wikipedia-logo-v2.svg.png">
+                            <svg class="stretched-link w-100" width="200" height="250"
+                                xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail"
+                                preserveAspectRatio="xMidYMid slice" focusable="false">
+                                <title>Placeholder</title>
+                                <rect width="100%" height="100%" fill="none" /><text x="50%" y="50%" fill="#eceeef"
+                                    dy=".3em"></text>
+
+                            </svg>
+
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div
+                    class="row g-0  rounded overflow-hidden flex-md-row mb-4  h-md-250 position-relative text-center text-lg-start">
+                    <div class="col d-flex flex-column position-static surface facts__widget DSwiper stretch__widget">
+                        <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff"
+                            class="swiper mySwiper ">
+                            <div class="parallax-bg" style="
+                          background-image: url(https://picsum.photos/1920/1080);" data-swiper-parallax="-23%"></div>
+                            <div class="swiper-wrapper">
+
+                                <div class="swiper-slide">
+                                    <div class="DYK__center ">
+                                        <div class="p-2">
+                                            <div class="" data-swiper-parallax="-300">
+                                                <h2 class="">Did you know?</h2>
+                                            </div>
+                                            <div class="" data-swiper-parallax="-100">
+                                                <p>
+                                                    that Perth's Airport Central railway station, which opens today, has
+                                                    the
+                                                    longest operating escalators in the southern hemisphere?
+                                                </p>
+                                            </div>
+                                            <div class="" data-swiper-parallax="-200"> <a href="#"
+                                                    class="stretched-link ">Continue reading</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="DYK__center ">
+                                        <div class="p-2 ">
+                                            <div class="" data-swiper-parallax="-300">
+                                                <h2 class="">Did you know?</h2>
+                                            </div>
+                                            <div class="" data-swiper-parallax="-100">
+                                                <p>
+                                                    An unproven and unexplained oceanic light phenomenon, might have
+                                                    been used by Polynesians to find islands in the Pacific Ocean?
+                                                </p>
+                                            </div>
+                                            <div class="" data-swiper-parallax="-200"> <a href="#"
+                                                    class="stretched-link ">Continue reading</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="DYK__center ">
+                                        <div class=" p-2">
+                                            <div class="" data-swiper-parallax="-300">
+                                                <h2 class="">Did you know?</h2>
+                                            </div>
+                                            <div class="" data-swiper-parallax="-100">
+                                                <p>
+                                                    that in the music video for the song "Anti-Hero", Taylor Swift
+                                                    imagines a scenario in which she is killed by her own
+                                                    daughter-in-law?
+                                                </p>
+                                            </div>
+                                            <div class="" data-swiper-parallax="-200"> <a href="#"
+                                                    class="stretched-link ">Continue reading</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+
+
+                            <div class="swiper-pagination"></div>
+                        </div>
+
+                        <!-- Swiper JS -->
+
+
+                        <!-- Initialize Swiper -->
+                        <script>
+                            var swiper = new Swiper(".mySwiper", {
+                                speed: 500,
+                                parallax: true,
+                                autoplay: {
+                                    delay: 2500,
+                                    disableOnInteraction: true
+                                },
+                                pagination: {
+                                    el: ".swiper-pagination",
+                                    clickable: true,
+
+                                },
+
+                                navigation: {
+                                    nextEl: ".swiper-button-next",
+                                    prevEl: ".swiper-button-prev",
+                                },
+                            });
+                        </script>
+
+
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-lg-6">
+                <div class="row g-0 rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col facts__widget  d-flex flex-column position-static surface ">
+
+                        <div class="swiper VSwiper p-4">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide ">
+                                    <h3 class="mb-0">On this day - <a href="" id="OTDtitle0">Leif Erikson
+                                            Day</a></h3>
+                                    <p id="OTDtext0" class="widget__overflow"> It honors
+                                        Leif Erikson, the Norse explorer who led
+                                        the first Europeans thought to have set foot in continental North
+                                        America</p>
+                                    <a href="#" id="OTDLink0" class="stretched-link bottom__link">Continue reading</a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <h3 class="mb-0">On this day - <a href="" id="OTDtitle1">Leif Erikson
+                                            Day</a></h3>
+                                    <p id="OTDtext1" class="widget__overflow"> It honors
+                                        Leif Erikson, the Norse explorer who led
+                                        the first Europeans thought to have set foot in continental North
+                                        America</p>
+                                    <a href="#" id="OTDLink1" class="stretched-link bottom__link">Continue reading</a>
+                                </div>
+                                <div class="swiper-slide">
+
+
+                                    <h3 class="mb-0">On this day - <a href="" id="OTDtitle2">Leif Erikson
+                                            Day</a></h3>
+                                    <p id="OTDtext2" class="widget__overflow"> It honors
+                                        Leif Erikson, the Norse explorer who led
+                                        the first Europeans thought to have set foot in continental North
+                                        America</p>
+                                    <a href="#" id="OTDLink2" class="stretched-link bottom__link ">Continue reading</a>
+                                </div>
+
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+
+                        <!-- Swiper JS -->
+
+
+                        <!-- Initialize Swiper -->
+                        <script>
+                            var swiper = new Swiper(".VSwiper", {
+                                direction: "vertical",
+                                slidesPerView: 1,
+                                spaceBetween: 30,
+                                mousewheel: true,
+                                autoplay: {
+                                    delay: 4000,
+                                    disableOnInteraction: true,
+                                },
+                                pagination: {
+                                    el: ".swiper-pagination",
+                                    clickable: true,
+                                },
+                            });
+                        </script>
+
+
+
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-12 col-lg-6 ">
+                <!-- <div
+                    class="row g-0  img-fluid rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col-12 col-lg-auto News__placeholder__img lightboxIndex border__style" id="NewsPic">
+                        <a data-modal="bs-lightbox" id="news__image__full" class="lightboxIndex"
+                            href="https://upload.wikimedia.org/wikipedia/en/thumb/8/80/Wikipedia-logo-v2.svg/1200px-Wikipedia-logo-v2.svg.png">
+                            <svg class="stretched-link w-100" width="200" height="250"
+                                xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail"
+                                preserveAspectRatio="xMidYMid slice" focusable="false">
+                                <title>Placeholder</title>
+                                <rect width="100%" height="100%" fill="none" /><text x="50%" y="50%" fill="#eceeef"
+                                    dy=".3em"></text>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="col p-4 d-flex flex-column position-static surface facts__widget">
+                        <strong class="d-inline-block mb-2 text-primary">In the News</strong>
+                        <h3 class="mb-0 d-block d-xl-none" id="">In the news</h3>
+                        <h3 class="mb-0 d-none d-xl-block" id="newsHl">In the news</h3>
+                        <div class="mb-1 text-muted" id=""></div>
+                        <p class="card-text mb-auto widget__overflow2" id="NewsText">Annie Thérèse Blanche Ernaux is a
+                            French writer, professor of
+                            literature and Nobel laureate. Ernaux was awarded the 2022 Nobel Prize in Literature "for
+                            the courage and clinical acuity with which she uncovers the roots, estrangements and
+                            collective <span class="d-none d-lg-block">restraints of personal memory".</span></p>
+                        <a href="#" id="NewsLink" class="stretched-link">Continue reading</a>
+                    </div>
+
+                </div> -->
+
+
+                <style>
+                    .news__swiper .swiper {
+                        width: 100%;
+                        height: 100%;
+                    }
+
+                    .news__swiper .swiper-slide {
+
+                    
+
+
+                        /* Center slide text vertically */
+                        display: -webkit-box;
+                        display: -ms-flexbox;
+                        display: -webkit-flex;
+                        display: flex;
+                        -webkit-box-pack: center;
+                        -ms-flex-pack: center;
+                        -webkit-justify-content: center;
+                        justify-content: center;
+                        -webkit-box-align: center;
+                        -ms-flex-align: center;
+                        -webkit-align-items: center;
+                        align-items: center;
+                    }
+
+                    .news__swiper .swiper-slide img {
+                        display: block;
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+
+
+                    .news__swiper .swiper-button-next, .news__swiper
+                    .swiper-rtl .swiper-button-prev {
+                        position: unset;
+                        top: unset;
+                        width: unset;
+                        height: unset;
+                        margin-top: unset;
+                        z-index: unset;
+                        cursor: unset;
+                        display: unset;
+                        align-items: unset;
+                        justify-content: unset;
+                        color: unset;
+                    }
+
+                    .news__swiper .swiper-button-next, .news__swiper
+                    .swiper-button-prev {
+                        position: unset;
+                        top: unset;
+                        width: unset;
+                        height: unset;
+                        margin-top: unset;
+                        z-index: unset;
+                        cursor: unset;
+                        display: unset;
+                        align-items: unset;
+                        justify-content: unset;
+                        color: unset;
+                    }
+
+                    .news__swiper .swiper-button-next:after, .news__swiper
+                    .swiper-rtl .swiper-button-prev:after {
+                        content: "";
+                    }
+
+                    .news__swiper .swiper-button-prev:after, .news__swiper
+                    .swiper-rtl .swiper-button-next:after {
+                        content: "";
+                    }
+                </style>
+
+                <div
+                    class="news__swiper swiper mySwiper row g-0  img-fluid rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="swiper-wrapper text-start">
+                        <div class="swiper-slide text-start " id="1slide">
+                            <div class="col-12 col-lg-auto d-none d-lg-block News__placeholder__img lightboxIndex border__style"
+                                id="NewsPic">
+                                <a data-modal="bs-lightbox" id="news__image__full" class="lightboxIndex"
+                                    href="https://upload.wikimedia.org/wikipedia/en/thumb/8/80/Wikipedia-logo-v2.svg/1200px-Wikipedia-logo-v2.svg.png">
+                                    <svg class="stretched-link w-100" width="200" height="275"
+                                        xmlns="http://www.w3.org/2000/svg" role="img"
+                                        aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice"
+                                        focusable="false">
+                                        <title>Placeholder</title>
+                                        <rect width="100%" height="100%" fill="none" /><text x="50%" y="50%"
+                                            fill="#eceeef" dy=".3em"></text>
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="col p-4 d-flex flex-column position-static surface facts__widget">
+                                <strong class="d-inline-block mb-2 text-primary">In the News</strong>
+                                <h3 class="mb-0 d-block d-xl-none" id="">In the news</h3>
+                                <h3 class="mb-0 d-none d-xl-block" id="newsHl">In the news</h3>
+                                <div class="mb-1 text-muted" id=""></div>
+                                <p class="card-text mb-auto widget__overflow2" id="NewsText">Annie Thérèse Blanche
+                                    Ernaux is a
+                                    French writer, professor of
+                                    literature and Nobel laureate. Ernaux was awarded the 2022 Nobel Prize in Literature
+                                    "for
+                                    the courage and clinical acuity with which she uncovers the roots, estrangements and
+                                    collective <span class="d-none d-lg-block">restraints of personal memory".</span>
+                                </p>
+                                <a href="#" id="NewsLink" class="stretched-link">Continue reading</a>
+                            </div>
+                        </div>
+
+
+                        <div class="swiper-slide text-start">
+                            <div class="col p-4 d-flex flex-column position-static surface facts__widget">
+                                <strong class="d-inline-block mb-2 text-primary">In the News</strong>
+                                <h3 class="mb-0 d-block d-xl-none" id="">In the news</h3>
+                                <h3 class="mb-0 d-none d-xl-block" id="newsHl2">In the news</h3>
+                                <div class="mb-1 text-muted" id=""></div>
+                                <p class="card-text mb-auto widget__overflow2" id="NewsText2">Annie Thérèse Blanche
+                                    Ernaux is a
+                                    French writer, professor of
+                                    literature and Nobel laureate. Ernaux was awarded the 2022 Nobel Prize in Literature
+                                    "for
+                                    the courage and clinical acuity with which she uncovers the roots, estrangements and
+                                    collective <span class="d-none d-lg-block">restraints of personal memory".</span>
+                                </p>
+                                <a href="#" id="NewsLink2" class="stretched-link">Continue reading</a>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide text-start">
+                            <div class="col p-4 d-flex flex-column position-static surface facts__widget">
+                                <strong class="d-inline-block mb-2 text-primary">In the News</strong>
+                                <h3 class="mb-0 d-block d-xl-none" id="">In the news</h3>
+                                <h3 class="mb-0 d-none d-xl-block" id="newsHl3">In the news</h3>
+                                <div class="mb-1 text-muted" id=""></div>
+                                <p class="card-text mb-auto widget__overflow2" id="NewsText3">Annie Thérèse Blanche
+                                    Ernaux is a
+                                    French writer, professor of
+                                    literature and Nobel laureate. Ernaux was awarded the 2022 Nobel Prize in Literature
+                                    "for
+                                    the courage and clinical acuity with which she uncovers the roots, estrangements and
+                                    collective <span class="d-none d-lg-block">restraints of personal memory".</span>
+                                </p>
+                                <a href="#" id="NewsLink3" class="stretched-link">Continue reading</a>
+                            </div>
+                        </div>
+                     
+
+                    </div>
+
+                    <div class="swiper-button-next news__swiper__btn ms-5 "><i class="bi bi-arrow-right-circle"></i>
+                    </div>
+                    <div class="swiper-button-prev news__swiper__btn "><i class="bi bi-arrow-left-circle"></i></div>
+                </div>
+
+                <!-- Swiper JS -->
+                <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+                <!-- Initialize Swiper -->
+                <script>
+                    var swiper = new Swiper(".mySwiper", {
+                        navigation: {
+                            nextEl: ".swiper-button-next",
+                            prevEl: ".swiper-button-prev",
+                        },
+                    });
+                </script>
+
+
+
+            </div>
+
+
+
+
+            <div class="col-md-12 ">
+                <div class="row g-0   rounded overflow-hidden  mb-4 shadow-sm  position-relative">
+                    <div class="col-lg-6 col-12" id="featuredPic"
+                        style="
+                    background-image: url(https://picsum.photos/1280/720); height: 500px; background-size: cover; background-position: center;  background-repeat: no-repeat;">
+
+                    </div>
+                    <div class="col-lg col-12 p-4 d-flex flex-column position-static surface border__style">
+                        <strong class="d-inline-block mb-0 text-primary">Wikimedia Commons</strong>
+
+                        <h3 class="mb-0">Today's featured picture</h3>
+
+                        <p class="card-text " id="featuredPtext">
+
+
+
+                        </p>
+
+
+
+
+
+                        <p class="text-muted mb-auto pb-5">Featured pictures are images from highly skilled creators
+                            that the
+                            Wikimedia Commons community has chosen as some of the highest quality on the site.</p>
+
+
+                        <p class="small" id="featuredPartist">Artist</p>
+                        <p class="small" id="featuredPcredit">Credit</p>
+                        <a data-modal="bs-lightbox" class="fw-bold" id="fp__image__full" class="lightboxIndex"
+                            href="">View source
+                            (Large download <i class="bi bi-file-arrow-down"></i>)</a>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row mb-5    ">
+            <div class="col-12 text-center   ">
+                <h2>Wikipedia's sister projects</h2>
+
+                <div class="swiper SisterSwiper shadow rounded ">
+                    <div class="swiper-wrapper SisterSwiper">
+                        <div class="swiper-slide">
+                            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/31px-Commons-logo.svg.png"
+                                alt="">
+                            <h6 class="pt-3 ps-1 d-none d-lg-block">Commons</h6>
+
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/MediaWiki-2020-icon.svg/35px-MediaWiki-2020-icon.svg.png"
+                                alt="">
+                            <h6 class="pt-3 ps-1 d-none d-lg-block">MediaWiki</h6>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Wikimedia_Community_Logo.svg/35px-Wikimedia_Community_Logo.svg.png"
+                                alt="">
+                            <h6 class="pt-3 ps-1 d-none d-lg-block">Meta-Wiki</h6>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Wikibooks-logo.svg/35px-Wikibooks-logo.svg.png"
+                                alt="">
+                            <h6 class="pt-3 ps-1 d-none d-lg-block">Wikibooks</h6>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Wikidata-logo.svg/47px-Wikidata-logo.svg.png"
+                                alt="">
+                            <h6 class="pt-3 ps-1 d-none d-lg-block">Wikidata</h6>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Wikinews-logo.svg/51px-Wikinews-logo.svg.png"
+                                alt="">
+                            <h6 class="pt-3 ps-1 d-none d-lg-block">Wikinews</h6>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Wikiquote-logo.svg/35px-Wikiquote-logo.svg.png"
+                                alt="">
+                            <h6 class="pt-3 ps-1 d-none d-lg-block">Wikiquote</h6>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Wikisource-logo.svg/35px-Wikisource-logo.svg.png"
+                                alt="">
+                            <h6 class="pt-3 ps-1 d-none d-lg-block">Wikisource</h6>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Wikispecies-logo.svg/35px-Wikispecies-logo.svg.png"
+                                alt="">
+                            <h6 class="pt-3 ps-1 d-none d-lg-block">Wikispecies</h6>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Wikiversity_logo_2017.svg/41px-Wikiversity_logo_2017.svg.png"
+                                alt="">
+                            <h6 class="pt-3 ps-1 d-none d-lg-block">Wikiversity</h6>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Wikivoyage-Logo-v3-icon.svg/35px-Wikivoyage-Logo-v3-icon.svg.png"
+                                alt="">
+                            <h6 class="pt-3 ps-1 d-none d-lg-block">Wikivoyage</h6>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/0/06/Wiktionary-logo-v2.svg/35px-Wiktionary-logo-v2.svg.png"
+                                alt="">
+                            <h6 class="pt-3 ps-1 d-none d-lg-block">Wiktionary</h6>
+                        </div>
+
+
+                    </div>
+
+                    <div class="swiper-pagination"></div>
+                </div>
+
+                <!-- Swiper JS -->
+
+
+                <!-- Initialize Swiper -->
+                <script>
+                    var swiper = new Swiper(".SisterSwiper", {
+                        slidesPerView: 4,
+                        slidesPerColumn: 2,
+                        spaceBetween: 0,
+                        autoplay: {
+                            delay: 2000,
+                            disableOnInteraction: true,
+                        },
+                        pagination: {
+                            el: ".swiper-pagination",
+                            clickable: true,
+                        },
+
+
+                    });
+                </script>
+
+            </div>
+        </div>
+
+
+
+
+        <div class="row g-5 mt-5">
+            <div class="col-md-8" id="mainContent">
+                <div class="searchResult mb-5" id="searchResults__container">
+                    <h3 class="pb-4 mb-4 fst-italic border-bottom">
+                        Search results:
+                    </h3>
+                    <div class="row">
+                        <div class="col-12 col-lg-7">
+
+                            <h2 id="searchResult__title">
+                                Sorry, we could not find any results for that search.</h2>
+                            <p id="searchResult__summary">
+                                please try again
+                            </p>
+
+                        </div>
+                        <div class="col-lg-auto">
+                            <div id="searchResult__image" class="rounded shadow col-12 col-lg-auto pt-3"
+                                style="
+                    background-image: url(https://picsum.photos/1280/720); width: 320px; background-position: center;  background-repeat: no-repeat; height: 320px;">
+                            </div>
+                        </div>
+
+                        <a href="#" id="searchResult__Link" class="fw-bold">Continue reading</a>
+                    </div>
+                </div>
+                <a onclick="scrollToTop()" href="#"><strong class="d-inline-block mb-2 text-primary">back to
+                        top</strong></a>
+
+
+                <h3 class="pb-4 mb-4 fst-italic border-bottom">
+                    Other Areas of Wikipedia
+                </h3>
+
+                <article class="blog-post mb-5">
+
+                    <p class="blog-post-meta">October 10th, 2022 by <a href="#">Steven</a></p>
+
+                    <ul class="mb-5">
+                        <li><a href="" class="fw-bold">Community portal</a> – The central hub for editors, with
+                            resources, links, tasks,
+                            and
+                            announcements.</li>
+                        <li> <a href="" class="fw-bold">Village pump</a> – Forum for discussions about Wikipedia itself,
+                            including policies and
+                            technical issues.</li>
+                        <li> <a href="" class="fw-bold">Site news </a> – Sources of news about Wikipedia and the broader
+                            Wikimedia movement.</li>
+                        <li> <a href="" class="fw-bold">Teahouse </a> – Ask basic questions about using or editing
+                            Wikipedia.</li>
+                        <li> <a href="" class="fw-bold">Help desk</a> – Ask questions about using or editing Wikipedia.
+                        </li>
+                        <li> <a href="" class="fw-bold">Reference desk</a> – Ask research questions about encyclopedic
+                            topics.</li>
+                        <li> <a href="" class="fw-bold">Content portals</a> – A unique way to navigate the encyclopedia.
+                        </li>
+                    </ul>
+
+                    <h4 class="pb-4 mb-4 fst-italic border-bottom text-center">
+                        About Wikipedia
+                    </h4>
+
+                    <blockquote class="text-center fst-italic">
+                        "Imagine a world in which every single person on the planet is given free access to the sum of
+                        all human knowledge. That's what we're doing."
+                    </blockquote>
+
+                    <h5 class="strong text-center mb-5">— Jimmy Wales</h5>
+
+                    <div class="row surface rounded border__style">
+                        <div class="col-12 col-lg-6 p-3">
+                            <p>Wikipedia is an encyclopedia that anyone can edit, and tens of millions already have!</p>
+                            <p>Wikipedia's purpose is to benefit readers by acting as a widely accessible and free
+                                encyclopedia that contains information on all branches of knowledge. Hosted by the
+                                Wikimedia Foundation, Wikipedia consists of freely editable content whose articles also
+                                provide numerous links to guide readers to related pages with more information.</p>
+                            <p>Written collaboratively by largely anonymous volunteers, anyone with Internet access and
+                                in good standing can write and make changes to Wikipedia articles (except in limited
+                                cases where editing is restricted to prevent disruption or vandalism).</p>
+                        </div>
+                        <div class="col-12 col-lg-6 "
+                            style="background-image: url(https://picsum.photos/502/336); background-size: cover; background-repeat: no-repeat;">
+                        </div>
+
+                        <div class="col-12 col-lg-6 "
+                            style="background-image: url(https://picsum.photos/1920/1080); background-size: cover; background-repeat: no-repeat; background-position: center;">
+                        </div>
+
+                        <div class="col-12 col-lg-6 p-3">
+                            <p>Since its creation on January 15, 2001, Wikipedia has grown into the world's largest
+                                reference
+                                website, attracting over a billion visitors monthly. It currently has more than
+                                fifty-nine
+                                million articles in more than 300 languages, including 6,566,084 articles in English
+                                with
+                                122,923 active contributors in the past month.</p>
+                            <p>The fundamental principles of Wikipedia are summarized in its five pillars. The Wikipedia
+                                community has developed many policies and guidelines, with which familiarity is not a
+                                requirement for contributing.</p>
+                            <p>Anyone is allowed to add or edit text, references, images, and other media here. What is
+                                contributed is more important than who contributes it. To remain, the content must be
+                                free of
+                                copyright restrictions and contentious material about living people. It must conform
+                                with
+                                Wikipedia's policies, including being verifiable against a published reliable source.
+                                Editors'
+                                opinions, beliefs, and unreviewed research will not remain. Contributions cannot damage
+                                Wikipedia, as its software allows easy reversal of errors, and many experienced editors
+                                watch to
+                                ensure that edits are improvements. Begin by simply clicking the Edit button at the top
+                                of any
+                                editable page!</p>
+                        </div>
+
+
+
+
+
+                        <div class="col-12 col-lg-6 p-3">
+                            <p>Wikipedia differs from printed references in important ways. It is continually created
+                                and
+                                updated, and articles on new events appear within minutes rather than months or years.
+                                Because
+                                anyone can improve Wikipedia it has become more comprehensive than any other
+                                encyclopedia. Its
+                                contributors improve the quality and quantity of the articles as well as remove
+                                misinformation,
+                                errors, and vandalism. Any reader who recognizes a mistake or finds places in articles
+                                which
+                                need more information (see Wikipedia:Researching with Wikipedia) can add to or fix
+                                articles.</p>
+                            <p>Over time, Wikipedia's pages tend to become more comprehensive and balanced. Wikipedia
+                                has tested
+                                the wisdom of the crowd since 2001, and found that it succeeds. As Linus's law asserts,
+                                Given
+                                enough eyeballs, all bugs are shallow!</p>
+                        </div>
+
+
+                        <div class="col-12 col-lg-6 "
+                            style="background-image: url(https://picsum.photos/1280/720); background-size: cover; background-repeat: no-repeat; background-position: center;">
+                        </div>
+
+                    </div>
+
+
+
+
+
+
+
+
+
+                </article>
+
+                <nav class="blog-pagination" aria-label="Pagination">
+                    <a class="btn btn-outline-primary rounded-pill" href="#">Older</a>
+                    <a class="btn btn-ou rounded-pill disabled">Newer</a>
+                </nav>
+
+            </div>
+
+            <div class="col-md-4">
+                <div class="position-sticky footer__container" style="top: 6rem;">
+                    <div class="p-4 mb-3 surface rounded  ">
+                        <h4 class="fst-italic strong ">We ask you, humbly: don't scroll away.</h4>
+                        <p class="mb-3">Hi, dear reader. if you use Wikipedia a lot, this message is for you. We're sure
+                            you are busy so we'll make this quick: today we need your help. We depend on donations from
+                            exceptional readers, but fewer than 2% give. if you donate just £1 today, Wikipedia could
+                            keep thriving. Thank you.</p>
+
+                        <a href="#" class="accent mt-3 btn-outline-success btn"> Donate <i
+                                class="bi bi-credit-card"></i></a>
+                    </div>
+
+                    <div class="p-4">
+                        <h4 class="fst-italic">Contribute</h4>
+                        <ol class="list-unstyled mb-0">
+                            <li><a href="#">Help</a></li>
+                            <li><a href="#">Learn to edit</a></li>
+                            <li><a href="#">Community portal</a></li>
+                            <li><a href="#">Recent changes</a></li>
+                            <li><a href="#">Upload file</a></li>
+                        </ol>
+                    </div>
+
+                    <div class="p-4">
+                        <h4 class="fst-italic">Tools</h4>
+                        <ol class="list-unstyled">
+                            <li><a href="#">What links here</a></li>
+                            <li><a href="#">Related changes</a></li>
+                            <li><a href="#">Special pages</a></li>
+                            <li><a href="#">Permanent link</a></li>
+                            <li><a href="#">Page information</a></li>
+                            <li><a href="#">Wikidata item</a></li>
+                        </ol>
+                    </div>
+
+                    <div class="p-4">
+                        <h4 class="fst-italic">Print/export</h4>
+                        <ol class="list-unstyled">
+                            <li><a href="#">Download as PDF</a></li>
+                            <li><a href="#">Printable version</a></li>
+
+                        </ol>
+                    </div>
+
+                    <div class="p-4">
+                        <h4 class="fst-italic">In other projects</h4>
+                        <ol class="list-unstyled">
+                            <li><a href="#">Wikimedia Commons</a></li>
+                            <li><a href="#">MediaWiki</a></li>
+                            <li><a href="#">Meta-Wiki</a></li>
+                            <li><a href="#">Multilingual Wikisource</a></li>
+                            <li><a href="#">Wikispecies</a></li>
+                            <li><a href="#">Wikibooks</a></li>
+                            <li><a href="#">Wikidata</a></li>
+                            <li><a href="#">Wikimania</a></li>
+
+                            <li><a href="#">Wikinews</a></li>
+                            <li><a href="#">Wikiquote</a></li>
+                            <li><a href="#">Wikisource</a></li>
+                            <li><a href="#">Wikiversity</a></li>
+                            <li><a href="#">Wikivoyage</a></li>
+                            <li><a href="#">Wiktionary</a></li>
+                        </ol>
+                    </div>
+
+                    <div class="p-4">
+                        <h4 class="fst-italic">Languages</h4>
+                        <ol class="list-unstyled">
+                            <li><a href="#">العربية</a></li>
+                            <li><a href="#">বাংলা</a></li>
+                            <li><a href="#">Български</a></li>
+                            <li><a href="#">Bosanski</a></li>
+                            <li><a href="#">Català</a></li>
+                            <li><a href="#">Čeština</a></li>
+                            <li><a href="#">Dansk</a></li>
+                            <li><a href="#">Deutsch</a></li>
+
+                            <li><a href="#">Eesti</a></li>
+                            <li><a href="#">Norsk bokmål</a></li>
+                            <li><a href="#">Polski</a></li>
+                            <li><a href="#">Português</a></li>
+                            <li><a href="#">Simple English</a></li>
+                            <li><a href="#">Slovenčina</a></li>
+
+
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="blog-footer mb-5">
+
+    </footer>
+
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header d-flex surface shadow">
+            <img src="./Assets/Logo__Thumb.png" alt="" class="w-25">
+            <h1 class="offcanvas-title wikiFont lh-1 text-center d-inline" id="offcanvasRightLabel">Wikipedia <br> <span
+                    class="fs-5">The Free Encyclopedia</span></h1>
+            <button type="button" class="btn-close d-inline" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="row text-center  pb-3">
+                <div class="col surface rounded-0 shadow border-dark me-1  text-center">
+                    <input type="checkbox" id="toggle2"
+                        class="toggle--checkbox d-none darkmodeStuff session__storage__checkbox2">
+                    <label for="toggle2" class="toggle--label darkmodeStuff" id="dark-mode-toggle2">
+                        <span class="toggle--label-background"></span>
+                    </label>
+                </div>
+                <div class="col surface p-3 rounded-0 shadow border-dark "><a class="mt-auto mb-auto active"
+                        href="#"></a><br>
+                    <i class="bi bi-person-circle "></i> User 1</a>
+                </div>
+            </div>
+            <nav class="nav mobile__nav">
+                <ul class="nav__mobile" style="padding-left: 0px;">
+
+                    <li><i class="bi bi-house"></i> <a class=" active" href="#">Main page</a></li>
+                    <li><i class="bi bi-card-list"></i> <a class="" href="#">Contents</a></li>
+                    <li><i class="bi bi-calendar"></i> <a class="" href="#">Current events</a></li>
+                    <li><i class="bi bi-journal-richtext"></i> <a class="" href="Article.html">Random article</a></li>
+                    <li><i class="bi bi-people"></i> <a class="" href="#">About Wikipedia</a></li>
+                    <li><i class="bi bi-envelope"></i> <a class="" href="#">Contact us</a></li>
+                    <li><i class="bi bi-gift"></i> <a class="" href="#">Donate</a></li>
+                </ul>
+
+
+            </nav>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header border-bottom">
+            <h4 class="offcanvas-title" id="offcanvasExampleLabel">Wiki editor <i
+                    class="bi bi-pencil-square accent"></i></h4>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+
+            <nav class="nav mobile__nav">
+                <ul class="nav__mobile" style="padding-left: 0px;">
+
+                    <h5 class="mb-4 "><span class="fw-1 accent">You are editing: </span> Main page</h5>
+                    <li><i class="bi bi-megaphone"></i> <a class="" href="#">Talk</a></li>
+                    <li><i class="bi bi-book"></i> <a class="" href="#">Read</a></li>
+                    <li onclick=postNews()><i class="bi bi-archive"></i> <a class="" href="#">View source</a></li>
+                    <li onclick=deleteNews()><i class="bi bi-clock-history"></i> <a class="" href="#">View history</a>
+                    </li>
+                    <li><i class="bi bi-textarea-t"></i> <a class="" href="#">Sandbox</a></li>
+                    <li><i class="bi bi-shield-lock"></i> <a class="" href="#">Lock</a></li>
+                </ul>
+
+
+            </nav>
+        </div>
+    </div>
+
+
+
+
+</body>
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous">
+</script>
+
+
+
+<script src="./JS/wikiPull.js"></script>
+<script src="./JS/wikiSearch.js"></script>
+<script src="./JS/wikiPost.js"></script>
+<script src="./JS/darkmodeToggle.js"></script>
+<script src="./JS/statsCounter.js"></script>
+<script src="./JS/date.js"></script>
+<script src="./JS/Lightbox.js"></script>
+
+</html>

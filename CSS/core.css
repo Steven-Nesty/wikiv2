@@ -1,0 +1,719 @@
+:root {
+  --background: #FFFBFE;
+  --surface: rgb(233, 233, 233);
+  --surfacetrans: rgba(233, 233, 233, 0.459);
+  --primary: #1C1B1F;
+  --secondary: #121659;
+  --accent: #7d7fb6;
+  --invert: #FFFBFE;
+  --borders: rgba(82, 76, 76, 0.315);
+
+  /** sunny side **/
+  --blue-background: white;
+  --blue-border: white;
+  --blue-color: rgb(195, 231, 227);
+  --yellow-background: #fffaa8;
+  --yellow-border: #f5eb71;
+  /** dark side **/
+  --indigo-background: #808fc7;
+  --indigo-border: #46424e;
+  --indigo-color: #2b2f44;
+  --gray-border: #e8e8ea;
+  --gray-dots: #e8e8ea;
+  --white: #fff;
+}
+
+.darkmode {
+
+  --background: #333e43;
+  /* --background: #1C1B1F; */
+  --surface: rgb(36, 32, 37);
+  --surfacetrans: rgb(36, 32, 37, 0.459);
+  --primary: #ffffff;
+  --secondary: #e0f3db;
+  --borders: rgba(255, 255, 255, 0.11);
+  --accent: #9496e0;
+  --invert: #FFFBFE;
+}
+
+
+
+@media (min-width: 1600px) {
+
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl,
+  .container-xxl {
+    max-width: 1520px;
+  }
+}
+
+
+@font-face {
+  font-family: 'Linux Libertine';
+  /* normal */
+  src: url('/UniProject/Wiki/fonts/LinBiolinum_R.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.wikiFont {
+  font-family: 'Linux Libertine';
+}
+
+.accent {
+  color: var(--accent);
+}
+
+
+body {
+
+  background: var(--background);
+  color: var(--primary);
+}
+
+.surface {
+  background-color: var(--surface);
+}
+
+/* header section */
+.banner__head {
+  background-color: var(--surface);
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+  border-top: rgba(0, 0, 0, 0.151) solid 1px;
+}
+
+.header__nav {
+  font-size: 14px;
+}
+
+.search__box .form-control {
+  background-color: var(--background);
+  color: var(--primary);
+}
+
+.search__box .input-group-text {
+  background-color: var(--background);
+  color: var(--primary);
+}
+
+
+/* sections */
+.intro__box {
+  color: white;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  background-image: url(https://media.wired.co.uk/photos/606daf8aa329c00890ec0750/16:9/w_2560%2Cc_limit/printwiki11.jpg);
+  z-index: 100;
+  overflow: hidden;
+  transition: ease-in-out 0.2s;
+  text-shadow: 1px 1px #000000;
+}
+
+.intro__box:hover {
+  transition: ease-in-out 1s;
+  background-size: 105%;
+
+}
+
+
+@media only screen and (max-width: 770px) {
+  .intro__box {
+    background-size: cover;
+  }
+
+  .intro__box:hover {
+
+    background-size: cover;
+
+  }
+}
+
+.intro__box::after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(180deg, #000000, #000000, #49627a);
+  opacity: 0.4;
+
+}
+
+/* widgets */
+.facts__widget {
+  border: solid var(--borders) 1px;
+  height: 275px;
+}
+
+.border__style {
+
+  border: solid var(--borders) 1px;
+}
+
+.bg-gradient {
+  --bs-gradient: linear-gradient(180deg, rgba(0, 0, 0, 0), rgba(95, 78, 78, 0.123));
+  border-radius: 5px;
+  text-shadow: 1px 1px #000000;
+}
+
+.News__placeholder__img {
+  background-color: var(--background);
+  border: solid var(--borders) 1px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url(https://upload.wikimedia.org/wikipedia/en/thumb/8/80/Wikipedia-logo-v2.svg/1200px-Wikipedia-logo-v2.svg.png);
+}
+
+.featuredA__placeholder__img {
+  background-color: var(--background);
+  border: solid var(--borders) 1px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(https://upload.wikimedia.org/wikipedia/en/thumb/8/80/Wikipedia-logo-v2.svg/1200px-Wikipedia-logo-v2.svg.png);
+
+}
+
+.image__border {}
+
+/* Swiper */
+
+html,
+body {
+  position: relative;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+.VSwiper .swiper-pagination-bullet-active {
+  background-color: var(--primary) !important;
+}
+
+.VSwiper .swiper-pagination-bullet {
+  background: rgba(136, 136, 136, 0.582);
+  opacity: 0.8;
+}
+
+
+.SisterSwiper .swiper-pagination-bullet-active {
+  background-color: var(--primary) !important;
+}
+
+.SisterSwiper .swiper-pagination-bullet {
+  background: rgba(136, 136, 136, 0.582);
+  opacity: 0.8;
+}
+
+.DSwiper .swiper-pagination-bullet-active {
+  background-color: white !important;
+  opacity: 1;
+}
+
+.DSwiper .swiper-pagination-bullet {
+  background: rgba(204, 203, 203, 0.774);
+  opacity: 0.8;
+}
+
+.DSwiper .swiper {
+  width: 100%;
+  height: 100%;
+  background: #000;
+}
+
+.DSwiper .swiper-slide {
+
+  color: #fff;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 42px;
+  padding-top: 5px;
+
+}
+
+.DSwiper .parallax-bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 130%;
+  height: 100%;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center;
+}
+
+.DSwiper .parallax-bg::after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(100deg, #000000, #000000);
+  opacity: 0.4;
+}
+
+.DSwiper .swiper-slide .title {
+  font-size: 41px;
+  font-weight: 300;
+}
+
+.DSwiper .swiper-slide .subtitle {
+  font-size: 21px;
+}
+
+.DSwiper .swiper-slide .text {
+  font-size: 14px;
+  max-width: 400px;
+  line-height: 1.3;
+}
+
+.DSwiper .swiper-button-next {
+
+  scale: 0.5;
+}
+
+.DSwiper .swiper-button-prev {
+
+  scale: 0.5;
+}
+
+
+/* swiper virt */
+.VSwiper {
+  height: 275px;
+  width: 100%;
+  background: none;
+}
+
+.VSwiper .swiper-slide {
+
+  background-color: var(--surface);
+  color: var(--primary);
+}
+
+.VSwiper .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.SisterSwiper .swiper-button-next {
+  color: var(--primary);
+  scale: 0.5;
+}
+
+.SisterSwiper .swiper-button-prev {
+  color: var(--primary);
+  scale: 0.5;
+}
+
+.SisterSwiper .swiper-slide {
+  height: 100px;
+}
+
+.SisterSwiper .swiper {
+  width: 100%;
+
+}
+
+.SisterSwiper .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: var(--surface);
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.SisterSwiper img {
+  display: block;
+  object-fit: cover;
+}
+
+
+.SisterSwiper .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
+  background: var(--primary);
+}
+
+
+/* offcanvas*/
+.offcanvas {
+  background-color: var(--background);
+  color: var(--primary);
+}
+
+#searchResult__summary {
+
+  display: -webkit-box;
+  -webkit-line-clamp: 9;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.widget__overflow {
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+@media (max-width: 1200px) {
+  .widget__overflow {
+
+    -webkit-line-clamp: 4;
+
+  }
+}
+
+@media (max-width: 992px) {
+  .widget__overflow {
+
+    -webkit-line-clamp: 5;
+
+  }
+}
+
+.widget__overflow2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+@media (max-width: 1200px) {
+  .widget__overflow2 {
+
+    -webkit-line-clamp: 5;
+
+  }
+}
+
+@media (max-width: 992px) {
+  .widget__overflow2 {
+
+    -webkit-line-clamp: 4;
+
+  }
+}
+
+
+#featuredPic {}
+
+
+
+.mobile__nav ul li {
+  list-style: none;
+
+  margin-bottom: 30px;
+}
+
+.modal-fullscreen .modal-content {
+  background-color: var(--surfacetrans);
+
+
+}
+
+
+.lightboxIndex {
+  z-index: 999;
+}
+
+#LightboxCanvas {
+  max-height: 90vh;
+
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: var(--surface);
+}
+
+
+
+
+
+
+.darkmodeStuff {
+  scale: 0.3 !important;
+}
+
+.toggle--checkbox {
+  display: none;
+}
+
+.toggle--checkbox:checked {
+  /** This will all flip from sun to moon **/
+  /** Change the label color **/
+}
+
+.toggle--checkbox:checked~.background {
+  background: var(--indigo-background);
+}
+
+.toggle--checkbox:checked+.toggle--label {
+  background: var(--indigo-color);
+  border-color: var(--indigo-border);
+  /** Change the cloud to stars **/
+  /** Change the sun into the moon **/
+  /** Show the dimples on the moon **/
+}
+
+.toggle--checkbox:checked+.toggle--label .toggle--label-background {
+  left: 60px;
+  width: 5px;
+}
+
+.toggle--checkbox:checked+.toggle--label .toggle--label-background:before {
+  width: 5px;
+  height: 5px;
+  top: -25px;
+}
+
+.toggle--checkbox:checked+.toggle--label .toggle--label-background:after {
+  width: 5px;
+  height: 5px;
+  left: -30px;
+  top: 20px;
+}
+
+.toggle--checkbox:checked+.toggle--label:before {
+  background: var(--white);
+  border-color: var(--gray-border);
+  animation-name: switch;
+  animation-duration: 350ms;
+  animation-fill-mode: forwards;
+}
+
+.toggle--checkbox:checked+.toggle--label:after {
+  transition-delay: 350ms;
+  opacity: 1;
+}
+
+.toggle--label {
+  /** Placeholder element, starting at blue **/
+  width: 200px;
+  height: 100px;
+  background: var(--blue-color);
+  border-radius: 100px;
+  border: 5px solid var(--blue-border);
+  display: flex;
+  position: relative;
+  transition: all 350ms ease-in;
+  /** The sun cloud and moon stars **/
+  /** Sun/Moon element **/
+  /** Gray dots on the moon **/
+}
+
+.toggle--label-background {
+  width: 10px;
+  height: 5px;
+  border-radius: 5px;
+  position: relative;
+  background: var(--white);
+  left: 135px;
+  top: 45px;
+  transition: all 150ms ease-in;
+}
+
+.toggle--label-background:before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  width: 40px;
+  height: 5px;
+  border-radius: 5px;
+  background: var(--white);
+  left: -20px;
+  transition: all 150ms ease-in;
+}
+
+.toggle--label-background:after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  width: 40px;
+  height: 5px;
+  border-radius: 5px;
+  background: var(--white);
+  left: -10px;
+  transition: all 150ms ease-in;
+}
+
+.toggle--label:before {
+  animation-name: reverse;
+  animation-duration: 350ms;
+  animation-fill-mode: forwards;
+  transition: all 350ms ease-in;
+  content: "";
+  width: 82px;
+  height: 82px;
+  border: 5px solid var(--yellow-border);
+  top: 4px;
+  left: 4px;
+  position: absolute;
+  border-radius: 82px;
+  background: var(--yellow-background);
+}
+
+.toggle--label:after {
+  transition-delay: 0ms;
+  transition: all 250ms ease-in;
+  position: absolute;
+  content: "";
+  box-shadow: var(--gray-dots) -13px 0 0 2px, var(--gray-dots) -24px 14px 0 -2px;
+  left: 143px;
+  top: 23px;
+  width: 10px;
+  height: 10px;
+  background: transparent;
+  border-radius: 50%;
+  opacity: 0;
+}
+
+@keyframes switch {
+  0% {
+    left: 4px;
+  }
+
+  60% {
+    left: 4px;
+    width: 112px;
+  }
+
+  100% {
+    left: 104px;
+    width: 82px;
+  }
+}
+
+@keyframes reverse {
+  0% {
+    left: 104px;
+    width: 82px;
+  }
+
+  60% {
+    left: 72px;
+    width: 112px;
+  }
+
+  100% {
+    left: 4px;
+  }
+}
+
+.searchResult {
+  display: none;
+}
+
+
+
+
+.bottom__link {
+  position: absolute;
+  bottom: 0;
+}
+
+.DYK__center {
+  position: absolute;
+  margin-top: 7%;
+  width: 90%;
+  right: 5%;
+  cursor: grab;
+  text-shadow: 1px 1px #000000;
+
+
+}
+
+.parallax-bg {
+  filter: blur(3px);
+}
+
+
+
+@media screen and (min-width: 768px) {
+  .stretch__widget {
+    height: 527px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .stretch__widget {
+    height: 275px;
+  }
+}
+
+
+
+
+@media screen and (min-width: 992px) {
+  .footer__container {
+    border-left: solid 1px var(--borders);
+    border-top-left-radius: 5px;
+  }
+}
+
+.frosted__glass {
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  background-image: linear-gradient(80deg, #2426274f, #86bfd444);
+  backdrop-filter: blur(3px);
+
+
+}
+
+@media screen and (max-width: 991px) {
+  .mobile__sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1020;
+  }
+}
+
+
+
+
+
+/* fix */
+#toc_container li,
+#toc_container ul,
+#toc_container ul li {
+  list-style: outside none none !important;
+}
+
+
+.news__swiper__btn {
+
+  position: absolute !important;
+
+  font-size: 20px !important;
+  z-index: 9999 !important;
+  bottom: 80% !important;
+  left: 80% !important;
+  cursor:grab !important;
+}
