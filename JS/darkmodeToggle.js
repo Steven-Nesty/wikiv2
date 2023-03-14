@@ -25,11 +25,6 @@ const checkThebox = () => {
 }
 
 
-
-
-
-
-
 // If the user already visited and enabled darkMode
 // start things off with it on
 if (darkMode === 'enabled') {
