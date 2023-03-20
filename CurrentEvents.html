@@ -1,10 +1,12 @@
 <!doctype html>
 <html lang="en">
 
+
+
     <head prefix="og: https://ogp.me/ns#">
+        <!-- ... other tags like title, link, charset, viewport -->
         <meta name="keywords" content="The new and improved Wikipedia">
         <meta name="WikiV2">
-        <!-- ... other tags like title, link, charset, viewport -->
         <meta property="og:title" content="WikiV2 - Created by Nesty" />
         <meta property="og:description" content="Bringing your brands & ideas to life" />
         <meta property="og:image"
@@ -235,8 +237,8 @@ c0 12 -3 20 -7 20 -5 -1 -20 -4 -35 -6z m148 -55 c33 -63 -2 -148 -60 -148
                 <nav class="nav justify-content-between main__nav pt-4 pb-3 ">
                     <li><i class="bi bi-house "></i> <a class="" href="index.html">Main page</a></li>
                     <li><i class="bi bi-card-list"></i> <a class="" href="https://en.wikipedia.org/wiki/Wikipedia:Contents">Contents</a></li>
-                    <li><i class="bi bi-calendar"></i> <a class="" href="CurrentEvents.html">Current events</a></li>
-                    <li><i class="bi bi-journal-richtext"></i> <a class="fw-bold" href="Article.html">Random article</a></li>
+                    <li><i class="bi bi-calendar"></i> <a class="fw-bold" href="CurrentEvents.html">Current events</a></li>
+                    <li><i class="bi bi-journal-richtext"></i> <a class="" href="Article.html">Random article</a></li>
                     <li><i class="bi bi-people"></i> <a class="" href="index.html#about__section">About Wikipedia</a></li>
                     <li><i class="bi bi-envelope"></i> <a class="" href="contact.html">Contact us</a></li>
                     <li><i class="bi bi-gift"></i> <a class="" href="index.html#donate__section">Donate</a></li>
@@ -290,85 +292,229 @@ c0 12 -3 20 -7 20 -5 -1 -20 -4 -35 -6z m148 -55 c33 -63 -2 -148 -60 -148
                 </div>
 
 
-
+                <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
                 <h3 class="pb-2 mb-2 fst-italic border-bottom">
-                    Example Article
+                    Current events <i class="bi bi-globe-americas"></i>
                 </h3>
 
                 <article class="blog-post mb-5">
 
-                    <p class="blog-post-meta text-muted">Last updated: October 10th, 2022 by <a href="#">Steven</a></p>
-
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-                        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-                    <div class="row ms-1 my-5">
-                        <div class="col-12 col-md-3 surface shadow rounded border__style">
-                            <div id="toc_container">
-                                <h6 class="pb-2 pt-2 mb-2 border-bottom text-center ">
-                                    Contents <span class="text-primary"><a href="">[hide]</a></span>
-                                </h6>
-                                <ul class="toc_list text-start ps-0">
-                                    <li><a href="#First_Point_Header">1 Heading</a>
-                                        <ul class="ps-4">
-                                            <li><a href="#First_Sub_Point_1">1.1 First Sub Point 1</a></li>
-                                            <li><a href="#First_Sub_Point_2">1.2 First Sub Point 2</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="#Second_Point_Header">2 Second Header</a>
-                                        <ul class="ps-4">
-                                            <li><a href="#First_Sub_Point_1">2.1 Second Sub Point 1</a></li>
-                                            <li><a href="#First_Sub_Point_2">2.2 Second Sub Point 2</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="#Third_Point_Header">3 Third Header</a>
-                                        <ul class="ps-4">
-                                            <li><a href="#First_Sub_Point_1">3.1 Third Sub Point 1</a></li>
-                                            <li><a href="#First_Sub_Point_2">3.2 Third Sub Point 2</a></li>
-                                        </ul>
-                                    </li>
-                                    </li>
-                                </ul>
+                    <style>
+                        .news__swiper .swiper {
+                            width: 100%;
+                            height: 100%;
+                        }
+    
+                        .news__swiper .swiper-slide {
+    
+                        
+    
+    
+                            /* Center slide text vertically */
+                            display: -webkit-box;
+                            display: -ms-flexbox;
+                            display: -webkit-flex;
+                            display: flex;
+                            -webkit-box-pack: center;
+                            -ms-flex-pack: center;
+                            -webkit-justify-content: center;
+                            justify-content: center;
+                            -webkit-box-align: center;
+                            -ms-flex-align: center;
+                            -webkit-align-items: center;
+                            align-items: center;
+                        }
+    
+                        .news__swiper .swiper-slide img {
+                            display: block;
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                        }
+    
+    
+                        .news__swiper .swiper-button-next, .news__swiper
+                        .swiper-rtl .swiper-button-prev {
+                            position: unset;
+                            top: unset;
+                            width: unset;
+                            height: unset;
+                            margin-top: unset;
+                            z-index: unset;
+                            cursor: unset;
+                            display: unset;
+                            align-items: unset;
+                            justify-content: unset;
+                            color: unset;
+                        }
+    
+                        .news__swiper .swiper-button-next, .news__swiper
+                        .swiper-button-prev {
+                            position: unset;
+                            top: unset;
+                            width: unset;
+                            height: unset;
+                            margin-top: unset;
+                            z-index: unset;
+                            cursor: unset;
+                            display: unset;
+                            align-items: unset;
+                            justify-content: unset;
+                            color: unset;
+                        }
+    
+                        .news__swiper .swiper-button-next:after, .news__swiper
+                        .swiper-rtl .swiper-button-prev:after {
+                            content: "";
+                        }
+    
+                        .news__swiper .swiper-button-prev:after, .news__swiper
+                        .swiper-rtl .swiper-button-next:after {
+                            content: "";
+                        }
+                    </style>
+    
+                    <div class="news__swiper swiper mySwiper row g-0  img-fluid rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                        <div class="swiper-wrapper text-start">
+                            <div class="swiper-slide text-start " id="1slide">
+                                <div class="col-12 col-lg-auto d-none d-lg-block News__placeholder__img lightboxIndex border__style"
+                                    id="NewsPic">
+                                    <a data-modal="bs-lightbox" id="news__image__full" class="lightboxIndex"
+                                        href="https://upload.wikimedia.org/wikipedia/en/thumb/8/80/Wikipedia-logo-v2.svg/1200px-Wikipedia-logo-v2.svg.png">
+                                        <svg class="stretched-link w-100" width="200" height="275"
+                                            xmlns="http://www.w3.org/2000/svg" role="img"
+                                            aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice"
+                                            focusable="false">
+                                            <title>Placeholder</title>
+                                            <rect width="100%" height="100%" fill="none" /><text x="50%" y="50%"
+                                                fill="#eceeef" dy=".3em"></text>
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div class="col p-4 d-flex flex-column position-static surface facts__widget">
+                                    <strong class="d-inline-block mb-2 text-primary">In the News</strong>
+                                    <h3 class="mb-0 d-block d-xl-none" id="">In the news</h3>
+                                    <h3 class="mb-0 d-none d-xl-block" id="newsHl">In the news</h3>
+                                    <div class="mb-1 text-muted" id=""></div>
+                                    <p class="card-text mb-auto widget__overflow2" id="NewsText">Annie Thérèse Blanche
+                                        Ernaux is a
+                                        French writer, professor of
+                                        literature and Nobel laureate. Ernaux was awarded the 2022 Nobel Prize in Literature
+                                        "for
+                                        the courage and clinical acuity with which she uncovers the roots, estrangements and
+                                        collective <span class="d-none d-lg-block">restraints of personal memory".</span>
+                                    </p>
+                                    <a href="#" id="NewsLink" class="stretched-link">Continue reading</a>
+                                </div>
                             </div>
-
-
-
+    
+    
+                            <div class="swiper-slide text-start">
+                                <div class="col p-4 d-flex flex-column position-static surface facts__widget">
+                                    <strong class="d-inline-block mb-2 text-primary">In the News</strong>
+                                    <h3 class="mb-0 d-block d-xl-none" id="">In the news</h3>
+                                    <h3 class="mb-0 d-none d-xl-block" id="newsHl2">In the news</h3>
+                                    <div class="mb-1 text-muted" id=""></div>
+                                    <p class="card-text mb-auto widget__overflow2" id="NewsText2">Annie Thérèse Blanche
+                                        Ernaux is a
+                                        French writer, professor of
+                                        literature and Nobel laureate. Ernaux was awarded the 2022 Nobel Prize in Literature
+                                        "for
+                                        the courage and clinical acuity with which she uncovers the roots, estrangements and
+                                        collective <span class="d-none d-lg-block">restraints of personal memory".</span>
+                                    </p>
+                                    <a href="#" id="NewsLink2" class="stretched-link">Continue reading</a>
+                                </div>
+                            </div>
+    
+                            <div class="swiper-slide text-start">
+                                <div class="col p-4 d-flex flex-column position-static surface facts__widget">
+                                    <strong class="d-inline-block mb-2 text-primary">In the News</strong>
+                                    <h3 class="mb-0 d-block d-xl-none" id="">In the news</h3>
+                                    <h3 class="mb-0 d-none d-xl-block" id="newsHl3">In the news</h3>
+                                    <div class="mb-1 text-muted" id=""></div>
+                                    <p class="card-text mb-auto widget__overflow2" id="NewsText3">Annie Thérèse Blanche
+                                        Ernaux is a
+                                        French writer, professor of
+                                        literature and Nobel laureate. Ernaux was awarded the 2022 Nobel Prize in Literature
+                                        "for
+                                        the courage and clinical acuity with which she uncovers the roots, estrangements and
+                                        collective <span class="d-none d-lg-block">restraints of personal memory".</span>
+                                    </p>
+                                    <a href="#" id="NewsLink3" class="stretched-link">Continue reading</a>
+                                </div>
+                            </div>
+                         
+    
                         </div>
                     </div>
 
-                    <h4 class="pb-2 mb-2 fst-italic border-bottom">
-                        Heading 1
-                    </h4>
 
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-                        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <h3 class="pb-2 mb-2 fst-italic border-bottom">
+                        History <i class="bi bi-book-half"></i>
+                    </h3>
 
-                    <h4 class="pb-2 mb-2 my-5 fst-italic border-bottom">
-                        Heading 2
-                    </h4>
+                    <div class="row g-0   rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                        <div class="col p-4 d-flex flex-column position-static surface facts__widget">
+    
+                            <h3 class="mb-0">95th Academy Awards</h3>
+                            <div class="mb-1 text-muted" id="">March 3rd</div>
+                            <p class="card-text mb-auto widget__overflow" id="tfa__text">Daglish railway station is a
+                                The 95th Academy Awards was a ceremony held by the Academy of Motion Picture Arts and Sciences (AMPAS) on March 12, 2023, at the Dolby Theatre in Los Angeles. It honored films released in 2022.[3]</p>
+                            <a href="#" id="tfa__link" class="stretched-link">Continue reading</a>
+                        </div>
+    
+                        <div class="col-12 col-lg-auto featuredA__placeholder__img border__style  lightboxIndex" style="background-image: url(https://upload.wikimedia.org/wikipedia/en/b/b9/95_Oscars.png);"
+                            id="">
+                            <a data-modal="bs-lightbox" id="" class="lightboxIndex" 
+                                href="https://upload.wikimedia.org/wikipedia/en/b/b9/95_Oscars.png">
+                                <svg class="stretched-link w-100" width="200" height="250"
+                                    xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail"
+                                    preserveAspectRatio="xMidYMid slice" focusable="false">
+                                    <title>Placeholder</title>
+                                    <rect width="100%" height="100%" fill="none" /><text x="50%" y="50%" fill="#eceeef"
+                                        dy=".3em"></text>
+    
+                                </svg>
+    
+                            </a>
+                        </div>
+    
+                    </div>
 
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-                        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
-                    <h4 class="pb-2 mb-2 my-5  fst-italic border-bottom">
-                        Heading 3
-                    </h4>
+                    
 
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-                        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <div class="row g-0   rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                        <div class="col p-4 d-flex flex-column position-static surface facts__widget">
+    
+                            <h3 class="mb-0">Silicon Valley Bank</h3>
+                            <div class="mb-1 text-muted" id="">March 15th</div>
+                            <p class="card-text mb-auto widget__overflow" id="tfa__text">Silicon Valley Bank (SVB) was a state-chartered commercial bank headquartered in Santa Clara, California that failed on March 10, 2023, with holdings now managed by the Federal Deposit Insurance Corporation (FDIC).[3][4] SVB was the 16th-largest bank in the United States and was the largest bank by deposits in Silicon Valley.[5] SVB operated branches in California and Massachusetts.[6][3] The bank composed the primary business of SVB Financial Group, its publicly traded bank holding company which, with other subsidiaries, operated offices in 13 additional U.S. states and in over a dozen international jurisdictions.[3][7][8]
 
+                                SVB, a financial institution that had become the go-to bank for nearly half of all venture-backed tech startups,[9] failed after a run on its deposits[10][11] triggered by a series of central bank-endorsed interest rate hikes[12][13] amid a global inflation surge.[14][15] The California Department of Financial Protection and Innovation (DFPI), its regulator, seized the bank and placed it into the receivership of the FDIC in the second-largest bank failure in U.S. history.[16][17] On March 12, 2023, a joint statement by Secretary of the Treasury Janet Yellen, Federal Reserve Chairman Jerome Powell, and FDIC Chairman Martin Gruenberg said all depositors at SVB would be fully protected and have access to all of their money – including both insured and uninsured deposits – starting the following Monday, March 13.[18][19] That day, the newly-created and FDIC-administered successor, Silicon Valley Bridge Bank, N.A., a bridge bank, began operations and assumed ongoing business.[4][20]</p>
+                            <a href="#" id="tfa__link" class="stretched-link">Continue reading</a>
+                        </div>
+    
+                        <div class="col-12 col-lg-auto featuredA__placeholder__img border__style  lightboxIndex" style="background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/3003_West_Tasman_Drive_entrance_2%2C_Santa_Clara%2C_California.jpg/1280px-3003_West_Tasman_Drive_entrance_2%2C_Santa_Clara%2C_California.jpg);"
+                            id="">
+                            <a data-modal="bs-lightbox" id="" class="lightboxIndex" 
+                                href="https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/3003_West_Tasman_Drive_entrance_2%2C_Santa_Clara%2C_California.jpg/1280px-3003_West_Tasman_Drive_entrance_2%2C_Santa_Clara%2C_California.jpg">
+                                <svg class="stretched-link w-100" width="200" height="250"
+                                    xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail"
+                                    preserveAspectRatio="xMidYMid slice" focusable="false">
+                                    <title>Placeholder</title>
+                                    <rect width="100%" height="100%" fill="none" /><text x="50%" y="50%" fill="#eceeef"
+                                        dy=".3em"></text>
+    
+                                </svg>
+    
+                            </a>
+                        </div>
+    
+                    </div>
+                      
+          
                 </article>
 
                 <nav class="blog-pagination" aria-label="Pagination">
@@ -380,33 +526,9 @@ c0 12 -3 20 -7 20 -5 -1 -20 -4 -35 -6z m148 -55 c33 -63 -2 -148 -60 -148
 
             <div class="col-md-3 footer__container">
                 <div class="  text-center  " style="">
-                    <div class="p-4 mb-3 surface   rounded border__style">
-                        <h5 class="fst-italic strong text-center  p-2  fs-5">Image Title</h5>
-                        <p>example article image description</p>
+                  
 
-                        <div class=""
-                            style=" height: 300px; background-image: url(https://picsum.photos/200/300); background-position: center; background-size: cover; background-repeat: no-repeat;">
-                        </div>
-                        <img src="" class="" alt="">
-
-                        <p class=" text-center"> <span class="fw-bold">Image Credits:</span> Lorem Ipsem</p>
-                    </div>
-
-                    <div class="p-4">
-                        <h5 class="fst-italic border-bottom">Example Data</h5>
-                        <ol class="list-unstyled mb-0 text-start">
-                            <li class="fw-bold">Born: <span class="text-end fw-light"><a href="#"
-                                        class="">1925</a></span> </li>
-                            <li class="fw-bold">Other names: <span class="text-end fw-light"><a href="#"
-                                        class="">Lorem</a></span></li>
-                            <li class="fw-bold">Occupation: <span class="text-end fw-light"><a href="#"
-                                        class="">Ipsem</a></span></li>
-                            <li class="fw-bold">Years active: <span class="text-end fw-light"><a href="#"
-                                        class="">25</a></span></li>
-                            <li class="fw-bold">Organizations: <span class="text-end fw-light"><a href="#"
-                                        class="">Lorem Ipsem</a></span></li>
-                        </ol>
-                    </div>
+                   
                 </div>
 
                 <div class="p-4 mb-3 mt-5 surface rounded  ">

@@ -1,10 +1,12 @@
 <!doctype html>
 <html lang="en">
 
+
+
     <head prefix="og: https://ogp.me/ns#">
+        <!-- ... other tags like title, link, charset, viewport -->
         <meta name="keywords" content="The new and improved Wikipedia">
         <meta name="WikiV2">
-        <!-- ... other tags like title, link, charset, viewport -->
         <meta property="og:title" content="WikiV2 - Created by Nesty" />
         <meta property="og:description" content="Bringing your brands & ideas to life" />
         <meta property="og:image"
@@ -233,14 +235,13 @@ c0 12 -3 20 -7 20 -5 -1 -20 -4 -35 -6z m148 -55 c33 -63 -2 -148 -60 -148
         <div class="container ">
             <div class="  mb-2 ">
                 <nav class="nav justify-content-between main__nav pt-4 pb-3 ">
-                    <li><i class="bi bi-house "></i> <a class="" href="index.html">Main page</a></li>
+                    <li><i class="bi bi-house "></i> <a class=" " href="index.html">Main page</a></li>
                     <li><i class="bi bi-card-list"></i> <a class="" href="https://en.wikipedia.org/wiki/Wikipedia:Contents">Contents</a></li>
                     <li><i class="bi bi-calendar"></i> <a class="" href="CurrentEvents.html">Current events</a></li>
-                    <li><i class="bi bi-journal-richtext"></i> <a class="fw-bold" href="Article.html">Random article</a></li>
+                    <li><i class="bi bi-journal-richtext"></i> <a class="" href="Article.html">Random article</a></li>
                     <li><i class="bi bi-people"></i> <a class="" href="index.html#about__section">About Wikipedia</a></li>
-                    <li><i class="bi bi-envelope"></i> <a class="" href="contact.html">Contact us</a></li>
+                    <li><i class="bi bi-envelope"></i> <a class="fw-bold" href="contact.html">Contact us</a></li>
                     <li><i class="bi bi-gift"></i> <a class="" href="index.html#donate__section">Donate</a></li>
-
                 </nav>
             </div>
         </div>
@@ -292,83 +293,74 @@ c0 12 -3 20 -7 20 -5 -1 -20 -4 -35 -6z m148 -55 c33 -63 -2 -148 -60 -148
 
 
                 <h3 class="pb-2 mb-2 fst-italic border-bottom">
-                    Example Article
+               Contact
                 </h3>
 
                 <article class="blog-post mb-5">
 
-                    <p class="blog-post-meta text-muted">Last updated: October 10th, 2022 by <a href="#">Steven</a></p>
-
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-                        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-                    <div class="row ms-1 my-5">
-                        <div class="col-12 col-md-3 surface shadow rounded border__style">
-                            <div id="toc_container">
-                                <h6 class="pb-2 pt-2 mb-2 border-bottom text-center ">
-                                    Contents <span class="text-primary"><a href="">[hide]</a></span>
-                                </h6>
-                                <ul class="toc_list text-start ps-0">
-                                    <li><a href="#First_Point_Header">1 Heading</a>
-                                        <ul class="ps-4">
-                                            <li><a href="#First_Sub_Point_1">1.1 First Sub Point 1</a></li>
-                                            <li><a href="#First_Sub_Point_2">1.2 First Sub Point 2</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="#Second_Point_Header">2 Second Header</a>
-                                        <ul class="ps-4">
-                                            <li><a href="#First_Sub_Point_1">2.1 Second Sub Point 1</a></li>
-                                            <li><a href="#First_Sub_Point_2">2.2 Second Sub Point 2</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="#Third_Point_Header">3 Third Header</a>
-                                        <ul class="ps-4">
-                                            <li><a href="#First_Sub_Point_1">3.1 Third Sub Point 1</a></li>
-                                            <li><a href="#First_Sub_Point_2">3.2 Third Sub Point 2</a></li>
-                                        </ul>
-                                    </li>
-                                    </li>
-                                </ul>
-                            </div>
-
-
-
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="flush-headingOne">
+                            <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                Introduction
+                            </button>
+                          </h2>
+                          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</div>
+                          </div>
                         </div>
-                    </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="flush-headingTwo">
+                            <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                Readers
+                            </button>
+                          </h2>
+                          <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</div>
+                          </div>
+                        </div>
 
-                    <h4 class="pb-2 mb-2 fst-italic border-bottom">
-                        Heading 1
-                    </h4>
 
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-                        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="flush-headingThree">
+                            <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                Article subjects
+                            </button>
+                          </h2>
+                          <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</div>
+                          </div>
+                        </div>
 
-                    <h4 class="pb-2 mb-2 my-5 fst-italic border-bottom">
-                        Heading 2
-                    </h4>
 
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-                        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingFour">
+                              <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseThree">
+                                Licensing
+                              </button>
+                            </h2>
+                            <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                              <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</div>
+                            </div>
+                          </div>
 
-                    <h4 class="pb-2 mb-2 my-5  fst-italic border-bottom">
-                        Heading 3
-                    </h4>
 
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-                        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
+
+                          <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingFive">
+                              <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseThree">
+                                Donors
+                              </button>
+                            </h2>
+                            <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+                              <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</div>
+                            </div>
+                          </div>
+
+
+                      </div>
+          
                 </article>
 
                 <nav class="blog-pagination" aria-label="Pagination">
@@ -380,33 +372,9 @@ c0 12 -3 20 -7 20 -5 -1 -20 -4 -35 -6z m148 -55 c33 -63 -2 -148 -60 -148
 
             <div class="col-md-3 footer__container">
                 <div class="  text-center  " style="">
-                    <div class="p-4 mb-3 surface   rounded border__style">
-                        <h5 class="fst-italic strong text-center  p-2  fs-5">Image Title</h5>
-                        <p>example article image description</p>
+                  
 
-                        <div class=""
-                            style=" height: 300px; background-image: url(https://picsum.photos/200/300); background-position: center; background-size: cover; background-repeat: no-repeat;">
-                        </div>
-                        <img src="" class="" alt="">
-
-                        <p class=" text-center"> <span class="fw-bold">Image Credits:</span> Lorem Ipsem</p>
-                    </div>
-
-                    <div class="p-4">
-                        <h5 class="fst-italic border-bottom">Example Data</h5>
-                        <ol class="list-unstyled mb-0 text-start">
-                            <li class="fw-bold">Born: <span class="text-end fw-light"><a href="#"
-                                        class="">1925</a></span> </li>
-                            <li class="fw-bold">Other names: <span class="text-end fw-light"><a href="#"
-                                        class="">Lorem</a></span></li>
-                            <li class="fw-bold">Occupation: <span class="text-end fw-light"><a href="#"
-                                        class="">Ipsem</a></span></li>
-                            <li class="fw-bold">Years active: <span class="text-end fw-light"><a href="#"
-                                        class="">25</a></span></li>
-                            <li class="fw-bold">Organizations: <span class="text-end fw-light"><a href="#"
-                                        class="">Lorem Ipsem</a></span></li>
-                        </ol>
-                    </div>
+                   
                 </div>
 
                 <div class="p-4 mb-3 mt-5 surface rounded  ">
