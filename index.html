@@ -393,10 +393,10 @@ c0 12 -3 20 -7 20 -5 -1 -20 -4 -35 -6z m148 -55 c33 -63 -2 -148 -60 -148
                             var swiper = new Swiper(".mySwiper", {
                                 speed: 500,
                                 parallax: true,
-                                autoplay: {
-                                    delay: 2500,
-                                    disableOnInteraction: true
-                                },
+                                // autoplay: {
+                                //     delay: 2500,
+                                //     disableOnInteraction: true
+                                // },
                                 pagination: {
                                     el: ".swiper-pagination",
                                     clickable: true,
@@ -453,6 +453,9 @@ c0 12 -3 20 -7 20 -5 -1 -20 -4 -35 -6z m148 -55 c33 -63 -2 -148 -60 -148
                                 </div>
 
                             </div>
+
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
                             <div class="swiper-pagination"></div>
                         </div>
 
@@ -462,18 +465,23 @@ c0 12 -3 20 -7 20 -5 -1 -20 -4 -35 -6z m148 -55 c33 -63 -2 -148 -60 -148
                         <!-- Initialize Swiper -->
                         <script>
                             var swiper = new Swiper(".VSwiper", {
-                                direction: "vertical",
+                               
                                 slidesPerView: 1,
                                 spaceBetween: 30,
                                 mousewheel: true,
-                                autoplay: {
-                                    delay: 4000,
-                                    disableOnInteraction: true,
-                                },
+                                // autoplay: {
+                                //     delay: 4000,
+                                //     disableOnInteraction: true,
+                                // },
                                 pagination: {
                                     el: ".swiper-pagination",
                                     clickable: true,
                                 },
+                                navigation: {
+                                    nextEl: ".swiper-button-next",
+                                    prevEl: ".swiper-button-prev",
+                                },
+                                
                             });
                         </script>
 
