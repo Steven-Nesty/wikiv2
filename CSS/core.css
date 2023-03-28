@@ -8,6 +8,7 @@
   --invert: #FFFBFE;
   --borders: rgba(82, 76, 76, 0.315);
   --darkmodeLink: rgb(38, 92, 255);
+  --altLink: rgb(150, 222, 251);
   /** sunny side **/
   --blue-background: white;
   --blue-border: white;
@@ -35,12 +36,16 @@
   --accent: #9496e0;
   --invert: #FFFBFE;
    --darkmodeLink: rgb(150, 222, 251);
+   --altLink: rgb(150, 222, 251);
 }
 
 a:hover {
   color: var(--darkmodeLink);
 }
 
+.alt__link:hover{
+  color: var(--altLink);
+}
 
 @media (min-width: 1600px) {
 

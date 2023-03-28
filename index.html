@@ -37,15 +37,18 @@
         <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     </head>
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-0XTX1J24R0"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0XTX1J24R0"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
 
-  gtag('config', 'G-0XTX1J24R0');
-</script>
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-0XTX1J24R0');
+    </script>
 
 <body id="backtotop">
     <div class="surface mobile__sticky">
@@ -336,7 +339,7 @@ c0 12 -3 20 -7 20 -5 -1 -20 -4 -35 -6z m148 -55 c33 -63 -2 -148 -60 -148
                                                 </p>
                                             </div>
                                             <div class="" data-swiper-parallax="-200"> <a href="#"
-                                                    class="stretched-link ">Continue reading</a></div>
+                                                    class="stretched-link alt__link">Continue reading</a></div>
                                         </div>
                                     </div>
                                 </div>
@@ -353,7 +356,7 @@ c0 12 -3 20 -7 20 -5 -1 -20 -4 -35 -6z m148 -55 c33 -63 -2 -148 -60 -148
                                                 </p>
                                             </div>
                                             <div class="" data-swiper-parallax="-200"> <a href="#"
-                                                    class="stretched-link ">Continue reading</a></div>
+                                                    class="stretched-link alt__link">Continue reading</a></div>
                                         </div>
                                     </div>
                                 </div>
@@ -371,7 +374,7 @@ c0 12 -3 20 -7 20 -5 -1 -20 -4 -35 -6z m148 -55 c33 -63 -2 -148 -60 -148
                                                 </p>
                                             </div>
                                             <div class="" data-swiper-parallax="-200"> <a href="#"
-                                                    class="stretched-link ">Continue reading</a></div>
+                                                    class="stretched-link alt__link">Continue reading</a></div>
                                         </div>
                                     </div>
                                 </div>
@@ -454,9 +457,9 @@ c0 12 -3 20 -7 20 -5 -1 -20 -4 -35 -6z m148 -55 c33 -63 -2 -148 -60 -148
 
                             </div>
 
-                            <div class="swiper-button-next"></div>
-                            <div class="swiper-button-prev"></div>
-                            <div class="swiper-pagination"></div>
+                            <div class="swiper-button-next d-none d-lg-block"></div>
+                            <div class="swiper-button-prev d-none d-lg-block"></div>
+                            <div class="swiper-pagination d-block d-lg-none"></div>
                         </div>
 
                         <!-- Swiper JS -->
@@ -465,7 +468,7 @@ c0 12 -3 20 -7 20 -5 -1 -20 -4 -35 -6z m148 -55 c33 -63 -2 -148 -60 -148
                         <!-- Initialize Swiper -->
                         <script>
                             var swiper = new Swiper(".VSwiper", {
-                               
+
                                 slidesPerView: 1,
                                 spaceBetween: 30,
                                 mousewheel: true,
@@ -481,7 +484,7 @@ c0 12 -3 20 -7 20 -5 -1 -20 -4 -35 -6z m148 -55 c33 -63 -2 -148 -60 -148
                                     nextEl: ".swiper-button-next",
                                     prevEl: ".swiper-button-prev",
                                 },
-                                
+
                             });
                         </script>
 
@@ -531,7 +534,7 @@ c0 12 -3 20 -7 20 -5 -1 -20 -4 -35 -6z m148 -55 c33 -63 -2 -148 -60 -148
 
                     .news__swiper .swiper-slide {
 
-                    
+
 
 
                         /* Center slide text vertically */
@@ -557,8 +560,8 @@ c0 12 -3 20 -7 20 -5 -1 -20 -4 -35 -6z m148 -55 c33 -63 -2 -148 -60 -148
                     }
 
 
-                    .news__swiper .swiper-button-next, .news__swiper
-                    .swiper-rtl .swiper-button-prev {
+                    .news__swiper .swiper-button-next,
+                    .news__swiper .swiper-rtl .swiper-button-prev {
                         position: unset;
                         top: unset;
                         width: unset;
@@ -572,8 +575,8 @@ c0 12 -3 20 -7 20 -5 -1 -20 -4 -35 -6z m148 -55 c33 -63 -2 -148 -60 -148
                         color: unset;
                     }
 
-                    .news__swiper .swiper-button-next, .news__swiper
-                    .swiper-button-prev {
+                    .news__swiper .swiper-button-next,
+                    .news__swiper .swiper-button-prev {
                         position: unset;
                         top: unset;
                         width: unset;
@@ -587,13 +590,13 @@ c0 12 -3 20 -7 20 -5 -1 -20 -4 -35 -6z m148 -55 c33 -63 -2 -148 -60 -148
                         color: unset;
                     }
 
-                    .news__swiper .swiper-button-next:after, .news__swiper
-                    .swiper-rtl .swiper-button-prev:after {
+                    .news__swiper .swiper-button-next:after,
+                    .news__swiper .swiper-rtl .swiper-button-prev:after {
                         content: "";
                     }
 
-                    .news__swiper .swiper-button-prev:after, .news__swiper
-                    .swiper-rtl .swiper-button-next:after {
+                    .news__swiper .swiper-button-prev:after,
+                    .news__swiper .swiper-rtl .swiper-button-next:after {
                         content: "";
                     }
                 </style>
@@ -669,7 +672,7 @@ c0 12 -3 20 -7 20 -5 -1 -20 -4 -35 -6z m148 -55 c33 -63 -2 -148 -60 -148
                                 <a href="#" id="NewsLink3" class="stretched-link">Continue reading</a>
                             </div>
                         </div>
-                     
+
 
                     </div>
 
@@ -741,8 +744,154 @@ c0 12 -3 20 -7 20 -5 -1 -20 -4 -35 -6z m148 -55 c33 -63 -2 -148 -60 -148
         <div class="row mb-5    ">
             <div class="col-12 text-center   ">
                 <h2>Wikipedia's sister projects</h2>
+                <p>Wikipedia is written by volunteer editors and hosted by the Wikimedia Foundation, a non-profit
+                    organization that also hosts a range of other volunteer projects:</p>
 
-                <div class="swiper SisterSwiper shadow rounded ">
+                <div class="surface shadow rounded p-3 ">
+
+                    <style>
+                        .sister__projects__list .list-group-item {
+                            background-color: var(--surface);
+                            color: var(--primary);
+                            border-color: var(--borders);
+                            border-right: 0px;
+                            border-left: 0px;
+                            border-radius: 0px;
+                            height: 150px;
+                            display: flex;
+                            justify-content: center;
+                            align-content: center;
+                            align-items: center;
+                            flex-direction: column;
+                        }
+
+                        .sister__projects__list img{
+                            height: 30px;
+                            margin-bottom: 5px;
+                        }
+                    </style>
+
+                    <div class="row">
+
+                        <div class="col-12 col-lg-3  sister__projects__list ">
+                            <ul class="list-group ">
+                                <li class="list-group-item">
+                                    <img
+                                        src="https://upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/31px-Commons-logo.svg.png">
+                                    <h6 class="mb-0 mt-0">Commons</h6>
+                                    <p class="text-muted mb-0 mt-0">Free media repository</p>
+                                </li>
+
+                                <li class="list-group-item">
+                                    <img
+                                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Wikidata-logo.svg/47px-Wikidata-logo.svg.png">
+                                    <h6 class="mb-0 mt-0">Wikidata</h6>
+                                    <p class="text-muted mb-0 mt-0">Free knowledge base</p>
+                                </li>
+
+                                <li class="list-group-item">
+                                    <img
+                                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Wikispecies-logo.svg/35px-Wikispecies-logo.svg.png">
+                                    <h6 class="mb-0 mt-0">Wikispecies</h6>
+                                    <p class="text-muted mb-0 mt-0">Directory of species</p>
+                                </li>
+
+
+                            </ul>
+                        </div>
+
+                     
+
+                        <div class="col-12 col-lg-3  sister__projects__list">
+                            <ul class="list-group ">
+                                <li class="list-group-item">
+                                    <img
+                                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/MediaWiki-2020-icon.svg/35px-MediaWiki-2020-icon.svg.png">
+                                    <h6 class="mb-0 mt-0">MediaWiki</h6>
+                                    <p class="text-muted mb-0 mt-0">Wiki software development</p>
+                                </li>
+
+                                <li class="list-group-item">
+                                    <img
+                                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Wikinews-logo.svg/51px-Wikinews-logo.svg.png">
+                                    <h6 class="mb-0 mt-0">Wikinews</h6>
+                                    <p class="text-muted mb-0 mt-0">Free-content news</p>
+                                </li>
+
+                                <li class="list-group-item">
+                                    <img
+                                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Wikiversity_logo_2017.svg/41px-Wikiversity_logo_2017.svg.png">
+                                    <h6 class="mb-0 mt-0">Wikiversity</h6>
+                                    <p class="text-muted mb-0 mt-0">Free learning tools</p>
+                                </li>
+
+
+                            </ul>
+                        </div>
+
+
+                        <div class="col-12 col-lg-3  sister__projects__list">
+                            <ul class="list-group ">
+                                <li class="list-group-item">
+                                    <img
+                                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Wikimedia_Community_Logo.svg/35px-Wikimedia_Community_Logo.svg.png">
+                                    <h6 class="mb-0 mt-0">Meta-Wiki</h6>
+                                    <p class="text-muted mb-0 mt-0">Wikimedia project coordination</p>
+                                </li>
+
+                                <li class="list-group-item">
+                                    <img
+                                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Wikiquote-logo.svg/35px-Wikiquote-logo.svg.png">
+                                    <h6 class="mb-0 mt-0">Wikiquote</h6>
+                                    <p class="text-muted mb-0 mt-0">Collection of quotations</p>
+                                </li>
+
+                                <li class="list-group-item">
+                                    <img
+                                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Wikivoyage-Logo-v3-icon.svg/35px-Wikivoyage-Logo-v3-icon.svg.png">
+                                    <h6 class="mb-0 mt-0">Wikivoyage</h6>
+                                    <p class="text-muted mb-0 mt-0">Free travel guide</p>
+                                </li>
+
+
+                            </ul>
+                        </div>
+
+
+                        <div class="col-12 col-lg-3  sister__projects__list">
+                            <ul class="list-group ">
+                                <li class="list-group-item">
+                                    <img
+                                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Wikibooks-logo.svg/35px-Wikibooks-logo.svg.png">
+                                    <h6 class="mb-0 mt-0">Wikibooks</h6>
+                                    <p class="text-muted mb-0 mt-0">Free textbooks and manuals</p>
+                                </li>
+
+                                <li class="list-group-item">
+                                    <img
+                                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Wikisource-logo.svg/35px-Wikisource-logo.svg.png">
+                                    <h6 class="mb-0 mt-0">Wikisource</h6>
+                                    <p class="text-muted mb-0 mt-0">Free-content library</p>
+                                </li>
+
+                                <li class="list-group-item">
+                                    <img
+                                        src="https://upload.wikimedia.org/wikipedia/en/thumb/0/06/Wiktionary-logo-v2.svg/35px-Wiktionary-logo-v2.svg.png">
+                                    <h6 class="mb-0 mt-0">Wiktionary</h6>
+                                    <p class="text-muted mb-0 mt-0">Dictionary and thesaurus</p>
+                                </li>
+
+
+                            </ul>
+                        </div>
+
+
+
+                    </div>
+
+                </div>
+
+                <!-- <div class="swiper SisterSwiper shadow rounded ">
                     <div class="swiper-wrapper SisterSwiper">
                         <div class="swiper-slide">
                             <img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/31px-Commons-logo.svg.png"
@@ -811,13 +960,11 @@ c0 12 -3 20 -7 20 -5 -1 -20 -4 -35 -6z m148 -55 c33 -63 -2 -148 -60 -148
                     </div>
 
                     <div class="swiper-pagination"></div>
-                </div>
+                </div> -->
 
                 <!-- Swiper JS -->
-
-
                 <!-- Initialize Swiper -->
-                <script>
+                <!-- <script>
                     var swiper = new Swiper(".SisterSwiper", {
                         slidesPerView: 4,
                         slidesPerColumn: 2,
@@ -833,7 +980,7 @@ c0 12 -3 20 -7 20 -5 -1 -20 -4 -35 -6z m148 -55 c33 -63 -2 -148 -60 -148
 
 
                     });
-                </script>
+                </script> -->
 
             </div>
         </div>
@@ -1099,7 +1246,7 @@ c0 12 -3 20 -7 20 -5 -1 -20 -4 -35 -6z m148 -55 c33 -63 -2 -148 -60 -148
     </main>
 
     <footer class="blog-footer mb-5">
-        
+
     </footer>
 
     <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
