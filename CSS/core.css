@@ -22,6 +22,9 @@
   --gray-border: #e8e8ea;
   --gray-dots: #e8e8ea;
   --white: #fff;
+
+  --bs-accordion-color: #1C1B1F !important;
+  --bs-accordion-bg: rgb(233, 233, 233) !important;
 }
 
 .darkmode {
@@ -37,6 +40,10 @@
   --invert: #FFFBFE;
    --darkmodeLink: rgb(150, 222, 251);
    --altLink: rgb(150, 222, 251);
+
+   --bs-accordion-color: #ffffff !important;
+   --bs-accordion-bg: rgb(36, 32, 37) !important;
+
 }
 
 a:hover {
@@ -795,4 +802,12 @@ Remove or comment-out the code block below to see how the browser will fall-back
   .gallery-item {
     margin: 0;
   }
+}
+
+
+.contact__accordion,  .accordion-header{
+  --bs-accordion-bg: var(--surface);
+  --bs-accordion-color: var(--primary);
+  border-radius: 5px;
+  --bs-accordion-btn-color: var(--primary); 
 }
